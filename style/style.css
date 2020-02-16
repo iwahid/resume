@@ -20,6 +20,13 @@
 
 	/* resolution */
 	--xxl:1366px;
+	
+
+	/* Fonts size */
+	--f-xsm: 12px;
+	--f-sm: 16px;
+	--f-md: 24px;
+	--f-lg: 32px;
   }
 
     /* === Break-point (screen resolution) === */
@@ -316,7 +323,26 @@ hr {
 					top: 3px
 				}
 			.experience__job-descriptions {
-				margin-bottom: 45px; /*устанавливаю такой большой отступ у внутреннего элемента, а не у родителя, потому что шкала таймлайна расчитывается от всей высоты контентной части. Отступ внутри родительского блока - растягивает его и является его частью. В то время, как отступ у самого родителя просто разносил бы их дальше друг от друга и не изменял контентную часть*/
+				margin-bottom: 10px; /*устанавливаю такой большой отступ у внутреннего элемента, а не у родителя, потому что шкала таймлайна расчитывается от всей высоты контентной части. Отступ внутри родительского блока - растягивает его и является его частью. В то время, как отступ у самого родителя просто разносил бы их дальше друг от друга и не изменял контентную часть*/
 			}
+			.skills{
+				display: flex;
+				margin-bottom: 45px;
+			}
+				.skill{   
+					background-color: transparent;
+					border: none;
+					color: black;
+					border: 2px solid  var(--primary-color);
+					transition: all .3s linear;
+					margin: 3px;
+					padding: 3px;
+					font-size: var(--f-xsm);
+				}
+					.skill:hover {
+						background-color: var(--primary-color);
+						color: white;
+						transition: all .3s linear;
+					}
 
 /* === Experience (end) === */
