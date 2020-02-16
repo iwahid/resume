@@ -256,3 +256,67 @@ hr {
 				.primary-button {
 				}
 /* === AboutMe (end) === */
+
+/* === Experience === */
+
+.experience__wrapper{
+	display: flex;
+	flex-direction: column;
+}
+	.experience__item {
+		display: flex;
+	}
+		.experience__left-side {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-end;
+			align-items: flex-end;
+			margin-right: 20px;
+
+			min-width: 150px;
+		}
+			.experience__date {
+				margin-bottom: 10px;
+			}
+			.experience__location {
+				
+			}
+		.experience__right-side {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-end;
+			align-items: flex-start;
+			margin-left: 20px;
+
+			position: relative;
+		}
+			.experience__right-side:before {
+				
+				position: absolute;
+				content: "";
+				display: block;
+				height: 100%;
+				top: 10px;
+				width: 2px;
+				background-color: var(--primary-color);
+				left: -20px;
+			}
+			.experience__position {
+				margin-bottom: 10px;
+			}
+				.experience__position::before {
+					position: absolute;
+					content: "";
+					display: block;
+					height: 16px;
+					width: 16px;
+					border-radius: 50%;
+					background-color: var(--primary-color);
+					left: -26px;
+					top: 3px
+				}
+			.experience__job-descriptions {
+				margin-bottom: 45px; /*устанавливаю такой большой отступ у внутреннего элемента, а не у родителя, потому что шкала таймлайна расчитывается от всей высоты контентной части. Отступ внутри родительского блока - растягивает его и является его частью. В то время, как отступ у самого родителя просто разносил бы их дальше друг от друга и не изменял контентную часть*/
+			}
+
+/* === Experience (end) === */
