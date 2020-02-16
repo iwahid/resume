@@ -1,0 +1,258 @@
+/*
+Структура сайта: каждый раздел будет обособлен и выделен на странице, как отедльный блок
+Их размеры будут адаптивными
+Делить страницу на блоки - создаю контейнеры и либо указываю высоту контентом, либо vh (на всю страницу), и крайне редко px*/
+
+
+
+
+/* === Variables  === */
+:root {
+	/* element color*/
+	--main-bg-color: #F5F5F5;
+	--container-bg-color: #ffffff;
+	--primary-color: #0099E5;
+
+	/* text color */
+	--text-regular:#000;
+	--text-primary: #0099E5;
+	--text-secondary: #6f6f6f;
+
+	/* resolution */
+	--xxl:1366px;
+  }
+
+    /* === Break-point (screen resolution) === */
+		/*
+			XXS: 0,
+			XS: 360,
+			SM: 576,
+			MD: 768,
+			LG: 968,
+			XL: 1200,
+		*/
+	/* === Break-point (screen resolution) (end)  === */
+
+/* === Variables (end) === */
+
+
+
+/* === Fonts style=== */
+.text-regular{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	line-height: 24px;
+	color: var(--text-regular);
+}
+
+.text-primory{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	color: var(--text-primary);
+}
+
+.text-secondary{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: var(--text-secondary);
+}
+
+/* === Fonts size=== */
+.f-sm{
+	font-size: 16px;
+}
+.f-md{
+	font-size: 24px;
+}
+.f-lg{
+	font-size: 36px;
+}
+
+/* === Fonts weight=== */
+.f-sm{
+	font-size: 16px;
+}
+.f-md{
+	font-size: 24px;
+}
+.f-lg{
+	font-size: 36px;
+}
+
+/* === General elements=== */
+
+body{
+	font-family: 'Montserrat', sans-serif; /*Пока начну с этого. Возможно, заменю на Roboto*/
+	font-size: 16px;
+	background-color: var(--main-bg-color);
+	padding: 0 10px;
+}
+
+.container{ /* контейнер для всего сайта. */
+	width: 100%; 
+	max-width: var(--xxl); 
+	margin: 0 auto; /*выравнил по центру*/
+	background-color: var(--container-bg-color);
+
+	margin-top: 50px;
+	margin-bottom: 10px;
+
+	padding: 10px 0;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+	.container:last-child{ 
+		margin-bottom: 0px;
+	}
+
+
+
+
+
+.primary-button {
+	width: 170px;    
+	height: 35px;
+	background-color: transparent;
+	border: none;
+	color: black;
+	border: 2px solid  var(--primary-color);
+	transition: all .3s linear;
+	margin: 5px;
+}
+	.primary-button:hover {
+		background-color: var(--primary-color);
+		color: white;
+		transition: all .3s linear;
+	}
+
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.section-name{
+	display: block;
+	position: relative;
+	right: 0;
+	top: 0;
+	
+}
+	.section-name:after{
+		content: "";
+		display: block;
+		height: 2px;
+		width: 100%;
+
+		position: absolute;
+
+		background-color: var(--primary-color);
+		color: green;
+		right: 0;
+		top: 75px;
+
+		
+	}
+/* === General elements (end) === */
+
+
+/* === Header  === */
+/* зарезервирую header под навигацию. Навигация тоже будет адаптивной, её стиль определю позже*/
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+	position: absolute; /*мог бы зафиксировать на самом верху, но тогда нужно будет body - static*/
+	top: 0;
+	left: 0;
+	right: 0;
+}
+/* === Header (end) === */
+
+
+/* === AboutMe === */
+.aboutMe {
+	display: flex;
+
+	flex-direction: column;
+	padding-top: 15px;
+	padding-right: 5px;
+
+	position: relative;
+	
+}
+	.section-content{
+		display: flex;
+
+	}	
+		.aboutMe__photoContainer{
+			padding: 20px;
+			position: relative;
+			max-width: 410px;
+			max-height: 490px;
+			
+		}
+			.aboutMe__borderPhoto{
+				width: 90%;
+				height: 95%;
+				border: 5px solid var(--primary-color);
+				position: absolute;
+				z-index: 0;
+				left: 20px;
+				top:  15px;
+			}
+			.aboutMe__photo {
+				
+				max-width: 410px;
+				max-height: 490px;
+			}
+			.aboutMe__content {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-content: flex-start;
+
+				margin-left: 15px;
+			}
+				.aboutMe__heading {
+					margin-bottom: 50px;
+				}
+				.aboutMe__description {
+					
+				}
+				
+				.aboutMe__moreInformation {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					width: 100%;
+				}
+					.moreInformation__item {
+						display: flex;
+						align-content: flex-start;
+						align-items: flex-start;
+						
+						width: 45%;
+						margin: 5px;
+
+					}
+						.moreInformation__icon {
+							margin-right: 5px;
+						}
+						.moreInformation__lable{
+							margin-right: 5px;
+						}
+						.moreInformation__content{
+
+						}
+
+				.primary-button {
+				}
+/* === AboutMe (end) === */
