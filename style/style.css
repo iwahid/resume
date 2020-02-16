@@ -68,6 +68,10 @@
 }
 
 /* === Fonts size=== */
+
+.f-xsm{
+	font-size: 12px;
+}
 .f-sm{
 	font-size: 16px;
 }
@@ -328,6 +332,7 @@ hr {
 			.skills{
 				display: flex;
 				margin-bottom: 45px;
+				flex-wrap: wrap;
 			}
 				.skill{   
 					background-color: transparent;
