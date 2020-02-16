@@ -308,8 +308,8 @@ hr {
 					position: absolute;
 					content: "";
 					display: block;
-					height: 16px;
-					width: 16px;
+					height: 12px;
+					width: 12px;
 					border-radius: 50%;
 					background-color: var(--primary-color);
 					left: -26px;
