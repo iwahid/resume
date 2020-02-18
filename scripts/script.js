@@ -10,6 +10,9 @@ function burgerMenu(selector){
   let link4 = document.getElementsByClassName("burger-menu__link")[4]
   let overlay = document.getElementById("burger-menu__overlay")
 
+  let test = document.getElementById("burger-menu")
+
+
   button.addEventListener("click", function(){
       console.log("button")
       chooseMenu()
@@ -49,6 +52,8 @@ function burgerMenu(selector){
      let menuu = document.getElementById("burger-menu")
      menuu.classList.toggle("burger-menu_active") /* хвала богам за то, что они создали такого человека, который придумал этот метод, что работает по принципу флага. Иаче пришлось бы городить условия и циклы*/
 
+     let testholder = document.getElementById("testholder")
+     testholder.classList.add("testholder_active")
   
   }
 }
