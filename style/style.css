@@ -110,7 +110,9 @@ body{
 
 	margin-bottom: 15px;
 
+
 	padding: 10px 0;
+
 
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -174,6 +176,10 @@ a{
 	text-decoration: none;
 	color: var(--text-regular);
 }
+
+.hack-anchor{
+	margin-bottom: 40px;
+}
 /* === General elements (end) === */
 
 
@@ -206,8 +212,23 @@ a{
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	
 }
+
+.menu-regular{
+	margin: auto 0;
+}
+	.menu-regular__item{
+		border: none;
+		color: var(--text-regular);
+		transition: all .2s linear;
+		margin: 5px;
+		padding: 3px;
+	}
+
+		.menu-regular__item:hover{
+			transition: all .2s linear;
+			color: var(--text-primary);
+		}
 
 
 
