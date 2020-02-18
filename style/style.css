@@ -352,14 +352,6 @@ a{
     transition: .3s linear;
 }
 
-/* 
-.burger-menu_active .burger-menu__nav{
-    right: 0px;
-	transition: .3s linear;
-	position: absolute;
-}
- */
-
 /* links */
 .burger-menu__link{
     text-transform: uppercase;
