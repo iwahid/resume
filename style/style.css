@@ -422,7 +422,11 @@ a{
 	.section-content{
 		display: flex;
 		padding: 10px;
-
+	}
+	@media (max-width: 800px) {
+		.section-content{
+			flex-direction: column;
+		}
 	}	
 		.aboutMe__photoContainer{
 			padding: 20px;
@@ -445,48 +449,58 @@ a{
 				max-width: 410px;
 				max-height: 490px;
 			}
-			.aboutMe__content {
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-start;
-				align-content: flex-start;
+		.aboutMe__information {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-content: flex-start;
 
-				margin-left: 15px;
+			margin-left: 15px;
+		}
+			.aboutMe__heading {
+				margin-bottom: 50px;
 			}
-				.aboutMe__heading {
-					margin-bottom: 50px;
-				}
-				.aboutMe__description {
-					
-				}
+			.aboutMe__description {
 				
-				.aboutMe__moreInformation {
+			}
+			
+			.aboutMe__moreInformation {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+				.moreInformation__item {
 					display: flex;
-					flex-direction: row;
-					flex-wrap: wrap;
-					width: 100%;
+					align-content: flex-start;
+					align-items: flex-start;
+					
+					width: 45%;
+					margin: 5px;
 				}
+				@media (max-width: 1060px) {
 					.moreInformation__item {
 						display: flex;
 						align-content: flex-start;
 						align-items: flex-start;
 						
-						width: 45%;
+						width: 95%;
 						margin: 5px;
+					}
+				}
+				
+					.moreInformation__icon {
+						margin-right: 5px;
+					}
+					.moreInformation__lable{
+						margin-right: 5px;
+					}
+					.moreInformation__content{
 
 					}
-						.moreInformation__icon {
-							margin-right: 5px;
-						}
-						.moreInformation__lable{
-							margin-right: 5px;
-						}
-						.moreInformation__content{
 
-						}
-
-				.primary-button {
-				}
+			.primary-button {
+			}
 /* === AboutMe (end) === */
 
 /* === Experience === */
