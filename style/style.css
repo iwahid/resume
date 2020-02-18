@@ -506,6 +506,14 @@ a{
 	.experience__item {
 		display: flex;
 	}
+	@media (max-width: 800px) {
+		.experience__wrapper{
+			margin-left: 5vw;
+		}
+		.experience__item {
+			flex-direction: column;
+		}
+	}
 		.experience__left-side {
 			display: flex;
 			flex-direction: column;
@@ -521,6 +529,43 @@ a{
 			.experience__location {
 				
 			}
+		@media (max-width: 800px) {
+			.experience__left-side {
+				align-items: flex-start;
+				margin-left: 20px;
+				min-width: 0px;
+				position: relative;
+			}
+				.experience__date {
+					margin-bottom: 5px;
+				}
+				.experience__location {
+					margin-bottom: 30px;
+				}
+			/* timeline for */	
+			.experience__left-side::before {
+				
+				position: absolute;
+				content: "";
+				display: block;
+				height: 100%;
+				top: 10px;
+				width: 2px;
+				background-color: var(--primary-color);
+				left: -20px;
+			}
+			.experience__date::before {
+					position: absolute;
+					content: "";
+					display: block;
+					height: 12px;
+					width: 12px;
+					border-radius: 50%;
+					background-color: var(--primary-color);
+					left: -26px;
+					top: 3px
+				}
+		}
 		.experience__right-side {
 			display: flex;
 			flex-direction: column;
