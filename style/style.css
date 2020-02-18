@@ -490,7 +490,9 @@ a{
 					.moreInformation__content{
 
 					}
-
+			.aboutMe__buttons-section{
+				text-align: center;
+			}		
 			.primary-button {
 			}
 /* === AboutMe (end) === */
