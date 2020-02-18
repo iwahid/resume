@@ -345,9 +345,9 @@ a{
 	z-index: 200;
     display: flex;
 	flex-direction: column;
-    height: 100%;
+    max-height: 100%;
     background-color: var(--container-bg-color);
-    overflow-y: auto; /* прокручиваемое, если много пунктов в меню */
+    overflow-y: scroll; /* прокручиваемое, если много пунктов в меню */
     right: 0px;/* прячю меню, пока оно не нужно */
     transition: .3s linear;
 }
@@ -472,14 +472,11 @@ a{
 				}
 				@media (max-width: 1060px) {
 					.moreInformation__item {
-						display: flex;
-						align-content: flex-start;
-						align-items: flex-start;
-						
 						width: 95%;
-						margin: 5px;
+						flex-wrap: wrap;
 					}
 				}
+		
 				
 					.moreInformation__icon {
 						margin-right: 5px;
