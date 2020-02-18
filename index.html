@@ -7,16 +7,19 @@
 <head>
 	<!-- Заголовок страницы в браузере -->
 	<title>Iwahid resume</title>
-    <!-- Подключаем CSS -->
-    <link rel="stylesheet" href="style/normalize.css" />
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="style/normalize.css" />
 	<link rel="stylesheet" href="style/style.css" />
 	<!--Подключаем шрифты-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,700,700i,900&display=swap&subset=cyrillic" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,700,700i,900&display=swap&subset=cyrillic"
+		rel="stylesheet">
 
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<!-- Кодировка страницы -->
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-    
-    <!-- Адаптив на маленьких экранах с большим разрешением -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+	<!-- Адаптив на маленьких экранах с большим разрешением -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -31,11 +34,52 @@
 
 класс section - пока только для опредления области нейминга
 Тег H1 заменить на другой, в первой секции
+
+uppecase для отдельных элементов
 -->
 
 <body>
 	<!-- <header class="header container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nemo odit minima eaque culpa magnam explicabo delectus neque? Modi natus placeat eum? Vero necessitatibus iure recusandae dolore molestiae, nemo error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos fuga earum voluptates velit, praesentium nobis minus, iste aperiam, repudiandae unde officiis! Reiciendis saepe doloremque aliquid possimus tempore magnam doloribus.</header> -->
-	
+
+	<header class="header ">
+
+		<!-- <header class="header">
+			<div class="header__container container">
+				<div class="header__inner">
+					<div class="header__logo">MoGo</div>
+					<nav class="header-navigation">
+						<a href="#about" class="header-navigation__item">about</a>
+						<a href="#services" class="header-navigation__item">service</a>
+						<a href="#design" class="header-navigation__item">work</a>
+						<a href="#blog" class="header-navigation__item">blog</a>
+						<a href="#map" class="header-navigation__item">contact</a>
+						<a href="#" class="header-navigation__item"><img src="img/SHOPPING_CART.png" alt="SHOPPING_CART" class="navigation__item-img"></a>
+						<a href="#" class="header-navigation__item"><img src="img/MAGNIFYING_GLASS.png" alt="MAGNIFYING_GLASS" class="navigation__item-img"></a>
+						<a href="img/MoGo_layout.png" class="header-navigation__item header-navigation__item_active">макет</a>
+					</nav>
+				</div>
+			</div>
+		</header> -->
+
+		<div class="container menu-wrapper">
+			<div class="burger-menu " id="burger-menu"> <!-- Второй класс временно, только для того, что что проконтролировать то, какие изменения происходят при нажатии на кнопку меню -->
+				<a href="#" class="burger-menu__button " id="burger-menu__button">
+					<span class="burger-menu__lines"></span>
+				</a>
+				<nav class="burger-menu__nav">
+					<a href="#section-1" class="burger-menu__link">Section-1</a>
+					<a href="#section-2" class="burger-menu__link">Section-2</a>
+					<a href="#section-3" class="burger-menu__link">Section-3</a>
+					<a href="#section-4" class="burger-menu__link">Section-4</a>
+					<a href="#section-5" class="burger-menu__link">Section-5</a>
+				</nav>
+		
+				<div class="burger-menu__overlay"  id="burger-menu__overlay"></div> <!-- Плашка над контентом -->
+			</div>
+			<script src="scripts/script.js"></script>
+		</div>
+	</header>
+
 	<!-- "About Me" section -->
 	<section class="aboutMe section container">
 		<!-- <div class="section-name text-primory f-lg">About me</div> -->
@@ -48,132 +92,155 @@
 		<div class="section-content">
 
 			<div class="aboutMe__photoContainer">
-			
+
 				<img class="aboutMe__photo" src="assets/img/photo.jpg" alt="Author photo">
 				<div class="aboutMe__borderPhoto"> 1</div>
 			</div>
-			
-			
+
+
 			<div class="aboutMe__content">
-				
-				<h1 class="aboutMe__heading text-regular f-md">i'm wahid, and <span class="text-primory">pre-junior developer</span></h1>
-				<h1 class="aboutMe__description text-secondary f-sm">Привет, меня зовут Олег, и я юзаю плагин "Lorem ipsum" для того, что заполнить эту секцию текстом на момент верстки. Позже, я конечно, заменю это на актуальные данные о себе, но пока это будет просто текст-рыба <span class="text-primory">pre-junior developer </span>sit amet consectetur, adipisicing elit. Libero perferendis sint magnam, placeat maxime quos rem error, quisquam quas sunt quae incidunt quia sapiente culpa similique numquam rerum. Sunt, nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptas incidunt officia voluptates provident optio laboriosam unde animi, amet natus velit exercitationem ipsum distinctio officiis quaerat molestias? Ratione, nemo eius.</h1>
-				
+
+				<h1 class="aboutMe__heading text-regular f-md">i'm wahid, and <span class="text-primory">pre-junior
+						developer</span></h1>
+				<h1 class="aboutMe__description text-secondary f-sm">Привет, меня зовут Олег, и я юзаю плагин "Lorem
+					ipsum" для того, что заполнить эту секцию текстом на момент верстки. Позже, я конечно, заменю это на
+					актуальные данные о себе, но пока это будет просто текст-рыба <span class="text-primory">pre-junior
+						developer </span>sit amet consectetur, adipisicing elit. Libero perferendis sint magnam, placeat
+					maxime quos rem error, quisquam quas sunt quae incidunt quia sapiente culpa similique numquam rerum.
+					Sunt, nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptas incidunt officia
+					voluptates provident optio laboriosam unde animi, amet natus velit exercitationem ipsum distinctio
+					officiis quaerat molestias? Ratione, nemo eius.</h1>
+
 				<ul class="aboutMe__moreInformation ">
-					
+
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
-							<object type="image/svg+xml" data="assets/img/icons/age.svg"  width="25px" height="25px" > </object>
-	
+							<object type="image/svg+xml" data="assets/img/icons/age.svg" width="25px" height="25px">
+							</object>
+
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Возраст: </span>
 						<div class="moreInformation__content text-primory f-sm">24 года</div>
 					</li>
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
-							<object type="image/svg+xml" data="assets/img/icons/Location.svg"  width="25px" height="25px" > </object>
-	
+							<object type="image/svg+xml" data="assets/img/icons/Location.svg" width="25px"
+								height="25px"> </object>
+
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Локация: </span>
 						<div class="moreInformation__content text-primory f-sm">Челябинск</div>
 					</li>
-					
+
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
-							<object type="image/svg+xml" data="assets/img/icons/Study.svg"  width="25px" height="25px" > </object>
-	
+							<object type="image/svg+xml" data="assets/img/icons/Study.svg" width="25px" height="25px">
+							</object>
+
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Образование: </span>
 						<div class="moreInformation__content text-primory f-sm">ЧелГУ ВО</div>
 					</li>
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
-							<object type="image/svg+xml" data="assets/img/icons/Degree.svg"  width="25px" height="25px" > </object>
-	
+							<object type="image/svg+xml" data="assets/img/icons/Degree.svg" width="25px" height="25px">
+							</object>
+
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Специальность: </span>
 						<div class="moreInformation__content text-primory f-sm">Программная инженерия</div>
 					</li>
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
-							<object type="image/svg+xml" data="assets/img/icons/Works.svg"  width="25px" height="25px" > </object>
-	
+							<object type="image/svg+xml" data="assets/img/icons/Works.svg" width="25px" height="25px">
+							</object>
+
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Суммарный опыт </span>
 						<div class="moreInformation__content text-primory f-sm">Более 10 лет</div>
 					</li>
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
-							<object type="image/svg+xml" data="assets/img/icons/Testing.svg"  width="25px" height="25px" > </object>
-	
+							<object type="image/svg+xml" data="assets/img/icons/Testing.svg" width="25px" height="25px">
+							</object>
+
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Последняя работа: </span>
 						<div class="moreInformation__content text-primory f-sm">QA engineer</div>
 					</li>
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
-							<object type="image/svg+xml" data="assets/img/icons/Interests.svg"  width="25px" height="25px" > </object>
-	
+							<object type="image/svg+xml" data="assets/img/icons/Interests.svg" width="25px"
+								height="25px"> </object>
+
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Интересы: </span>
 						<div class="moreInformation__content text-primory f-sm">Игры, музыка, лыжи, антропология</div>
 					</li>
-	
+
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
-							<object type="image/svg+xml" data="assets/img/icons/Mail.svg"  width="25px" height="25px" > </object>
-	
+							<object type="image/svg+xml" data="assets/img/icons/Mail.svg" width="25px" height="25px">
+							</object>
+
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Почта: </span>
 						<div class="moreInformation__content text-primory f-sm">Iwahid@yandex.ru</div>
 					</li>
 				</ul>
-				
-	
+
+
 				<div class="aboutMe__buttons-section">
 					<button class="primary-button">Скачать резюме</button><!-- Загрузить сюда резюме в pdf -->
 					<button class="primary-button">Позвонить мне</button>
 				</div>
-				
+
 			</div>
 
 		</div>
-		
+
 
 	</section> <!-- "About Me" section (end) -->
 
 	<!-- "Experience" section -->
-	<section class="experience section container">
+	<section id="exp" class="experience section container">
 		<!-- <div class="section-name text-primory f-lg">About me</div> -->
 		<div class="section-info">
 			<div class="section-info__name text-primory f-md f-400">Опыт работы</div>
 			<hr>
-			<div class="section-info__description text-secondary f-xsm">Разнообразие опыта определяет гибкость мышления</div>
+			<div class="section-info__description text-secondary f-xsm">Разнообразие опыта определяет гибкость мышления
+			</div>
 		</div>
 
 		<div class="section-content">
 			<div class="experience__wrapper">
-			
+
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2007 - 2008</div>
 						<div class="experience__location text-secondary f-sm">London GreatSoft</div>
 					</div>
-					
+
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Frontend-developer</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great company. Best of the best worker Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloremque enim voluptas quas officia, velit soluta minus qui autem nisi assumenda labore architecto rem temporibus dignissimos itaque neque vitae beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur aut dicta, explicabo debitis eos sequi, eveniet id et accusamus expedita accusantium minus pariatur officia. Quaerat ipsum adipisci veniam perspiciatis?</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great
+							company. Best of the best worker Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Iure doloremque enim voluptas quas officia, velit soluta minus qui autem nisi assumenda
+							labore architecto rem temporibus dignissimos itaque neque vitae beatae. Lorem ipsum dolor
+							sit amet consectetur adipisicing elit. Iusto consequatur aut dicta, explicabo debitis eos
+							sequi, eveniet id et accusamus expedita accusantium minus pariatur officia. Quaerat ipsum
+							adipisci veniam perspiciatis?</div>
 						<div class="skills">
 							<div class="skill">Black-box testing</div>
 							<div class="skill">Gray-box testing</div>
 							<div class="skill">Manual testing</div>
 							<div class="skill">Regression</div>
 							<div class="skill">Integration</div>
-							
+
 						</div>
-						
+
 					</div>
-					
+
 				</div>
 
 				<div class="experience__item">
@@ -181,10 +248,11 @@
 						<div class="experience__date text-regular f-sm">2007 - 2008</div>
 						<div class="experience__location text-secondary f-sm">London GreatSoft</div>
 					</div>
-					
+
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Frontend-developer</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great company. Best of the best worker</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great
+							company. Best of the best worker</div>
 						<div class="skills">
 							<div class="skill">Black-box testing</div>
 							<div class="skill">Gray-box testing</div>
@@ -218,64 +286,73 @@
 							<div class="skill">блоков</div>
 						</div>
 					</div>
-					
+
 				</div>
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2007 - 2008</div>
 						<div class="experience__location text-secondary f-sm">London GreatSoft</div>
 					</div>
-					
+
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Frontend-developer</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great company. Best of the best worker</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great
+							company. Best of the best worker</div>
 					</div>
-					
+
 				</div>
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2007 - 2008</div>
 						<div class="experience__location text-secondary f-sm">London GreatSoft</div>
 					</div>
-					
+
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Frontend-developer</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great company. Best of the best worker</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great
+							company. Best of the best worker</div>
 					</div>
-					
+
 				</div>
 			</div>
 
-			
+
 		</div>
-		
+
 
 	</section><!-- "Experience" section (end) -->
 
-	<!-- "Education" section --> 
+	<!-- "Education" section -->
 	<!-- Для разметки следующей секции я буду использовать те же классы, что и для предыдущей секции, потмоу что стиль у них один и тот же. Возможно, можно было использвать один общий, нейтральный стиль для обоих (не классы с префиксом experience, а, к примеру, с префиксом resume-->
 	<section class="experience section container">
 		<!-- <div class="section-name text-primory f-lg">About me</div> -->
 		<div class="section-info">
 			<div class="section-info__name text-primory f-md f-400">Образование</div>
 			<hr>
-			<div class="section-info__description text-secondary f-xsm">Образование - это не изучение фактов, а приобретение знаний, умений и навыков.</div>
+			<div class="section-info__description text-secondary f-xsm">Образование - это не изучение фактов, а
+				приобретение знаний, умений и навыков.</div>
 		</div>
 
 		<div class="section-content">
 			<div class="experience__wrapper">
-			
+
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2007 - 2008</div>
 						<div class="experience__location text-secondary f-sm">London GreatSoft</div>
 					</div>
-					
+
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Frontend-developer</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great company. Best of the best worker Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloremque enim voluptas quas officia, velit soluta minus qui autem nisi assumenda labore architecto rem temporibus dignissimos itaque neque vitae beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur aut dicta, explicabo debitis eos sequi, eveniet id et accusamus expedita accusantium minus pariatur officia. Quaerat ipsum adipisci veniam perspiciatis?</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great
+							company. Best of the best worker Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Iure doloremque enim voluptas quas officia, velit soluta minus qui autem nisi assumenda
+							labore architecto rem temporibus dignissimos itaque neque vitae beatae. Lorem ipsum dolor
+							sit amet consectetur adipisicing elit. Iusto consequatur aut dicta, explicabo debitis eos
+							sequi, eveniet id et accusamus expedita accusantium minus pariatur officia. Quaerat ipsum
+							adipisci veniam perspiciatis?</div>
 					</div>
-					
+
 				</div>
 
 				<div class="experience__item">
@@ -283,42 +360,45 @@
 						<div class="experience__date text-regular f-sm">2007 - 2008</div>
 						<div class="experience__location text-secondary f-sm">London GreatSoft</div>
 					</div>
-					
+
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Frontend-developer</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great company. Best of the best worker</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great
+							company. Best of the best worker</div>
 					</div>
-					
+
 				</div>
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2007 - 2008</div>
 						<div class="experience__location text-secondary f-sm">London GreatSoft</div>
 					</div>
-					
+
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Frontend-developer</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great company. Best of the best worker</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great
+							company. Best of the best worker</div>
 					</div>
-					
+
 				</div>
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2007 - 2008</div>
 						<div class="experience__location text-secondary f-sm">London GreatSoft</div>
 					</div>
-					
+
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Frontend-developer</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great company. Best of the best worker</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Frontend developer in great
+							company. Best of the best worker</div>
 					</div>
-					
+
 				</div>
 			</div>
 
-			
-		</div>
-		
 
-	</section><!-- "Education" section (end) --> 
+		</div>
+
+
+	</section><!-- "Education" section (end) -->
 </body>

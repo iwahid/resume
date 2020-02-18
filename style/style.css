@@ -108,8 +108,7 @@ body{
 	margin: 0 auto; /*выравнил по центру*/
 	background-color: var(--container-bg-color);
 
-	margin-top: 50px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 
 	padding: 10px 0;
 
@@ -175,15 +174,172 @@ hr {
 
 /* === Header  === */
 /* зарезервирую header под навигацию. Навигация тоже будет адаптивной, её стиль определю позже*/
-.header{
-    width: 100%;
-    height: 50px;
-    background-color: aliceblue;
-	position: absolute; /*мог бы зафиксировать на самом верху, но тогда нужно будет body - static*/
-	top: 0;
-	left: 0;
-	right: 0;
+
+  header{
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 100%; 
+	max-width: var(--xxl); 
+	
+	margin: 0 auto; /*выравнил по центру*/
 }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-wrapper{
+    display: flex;
+    align-items: center;
+	justify-content: flex-start;
+	position: relative;
+}
+
+
+/* Сама кнопка меню */
+.burger-menu__button{
+    position: relative;
+    top: 10px;
+    left: 5vw;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #2a2a2a;
+    z-index: 100;
+}
+
+/* hover for menu 
+.burger-menu__button:hover .burger-menu__lines{
+    filter: brightness(0.7);
+    transition: all .3s linear;
+} */
+
+/* создаю сам бургер тремя спанами */
+.burger-menu__lines, 
+.burger-menu__lines::before,
+.burger-menu__lines::after{ 
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: var(--primary-color);
+    
+}
+
+/* раскидываю спаны */
+.burger-menu__lines{
+    top: 50%;
+    left: 25%;
+}
+
+.burger-menu__lines::before{
+    content:"";
+    top: 12px;
+} 
+.burger-menu__lines::after{
+    content:"";
+    top: -12px;
+}
+
+
+
+/* burger-menu_active только сама кнопка*/ 
+
+.burger-menu_active .burger-menu__lines{
+    background-color: transparent;
+}
+.burger-menu_active .burger-menu__lines::before{
+    top: -5px;
+    transform: rotate(45deg);
+    transition: .1s linear;
+}
+.burger-menu_active .burger-menu__lines::after{
+    top: -5px;
+    transform: rotate(-45deg);
+    transition: .1s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* вся плашка с меню вместе с ссылками */
+.burger-menu__nav{
+    width: 350px; /*когда заменю на динамическую ширину, нужно не забыть изменить значения для сокрытия*/
+    /*padding-top: 80px; /*внутренний отступ оставляю для того, что бы постоянно висящая кнопка крестик оставалась всегда доступной, но при этом под неё не залезали ссылки из меню*/
+	position: relative;
+	
+    height: 100%;
+	height: 0;
+	overflow: hidden;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    overflow-y: auto; /* прокручиваемое, если много пунктов в меню */
+    /*left: -350px;/* прячю меню, пока оно не нужно */
+    transition: .3s linear;
+}
+
+
+.burger-menu_active .burger-menu__nav{
+    left: 0;
+	transition: .3s linear;
+	height: 100%;
+}
+
+
+/* links */
+.burger-menu__link{
+    text-transform: uppercase;
+    color: white;
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.burger-menu__link:hover{
+    color: green;
+}
+
+
+/* плашка - подкладка, при нажатии на которую можно так же сделать закрытие меню */
+.burger-menu__overlay{
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.burger-menu_active .burger-menu__overlay{
+	background: rgba(255,245,215,.5);
+}
+
+
+
+
+
+
+
 /* === Header (end) === */
 
 
@@ -193,9 +349,7 @@ hr {
 
 	flex-direction: column;
 	padding-top: 15px;
-	padding-right: 5px;
 
-	position: relative;
 	
 }
 	.section-content{
