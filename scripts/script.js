@@ -1,6 +1,5 @@
 
 function burgerMenu(selector){
-  let menu = selector
   let button = document.getElementById("burger-menu__button")
 
   let link0 = document.getElementsByClassName("burger-menu__link")[0]
@@ -10,7 +9,6 @@ function burgerMenu(selector){
   let link4 = document.getElementsByClassName("burger-menu__link")[4]
   let overlay = document.getElementById("burger-menu__overlay")
 
-  let test = document.getElementById("burger-menu")
 
 
   button.addEventListener("click", function(){
@@ -48,14 +46,15 @@ function burgerMenu(selector){
   
 
 
-  function chooseMenu(){
-     let menuu = document.getElementById("burger-menu")
-     menuu.classList.toggle("burger-menu_active") /* хвала богам за то, что они создали такого человека, который придумал этот метод, что работает по принципу флага. Иаче пришлось бы городить условия и циклы*/
-
-     let testholder = document.getElementById("testholder")
-     testholder.classList.add("testholder_active")
   
-  }
+}
+
+
+function chooseMenu(){
+  let menuu = document.getElementById("burger-menu__nav") /*вся панель меню*/
+  menuu.classList.toggle("burger-menu__nav_active") /* хвала богам за то, что они создали такого человека, который придумал этот метод, что работает по принципу флага. Иначе пришлось бы городить условия и циклы*/
+  let overlay = document.getElementById("burger-menu__overlay") /*хак с подложкой, который реализует скрытие меню при нажатии мимо него (когда пользователь не хочет переходить куда-то, а остаться на текущем месте и выключить меню)*/
+  overlay.classList.toggle("burger-menu__overlay_active")
 }
 
 burgerMenu (document.getElementById("burger-menu"))
