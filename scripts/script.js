@@ -14,6 +14,7 @@ function burgerMenu(selector){
   button.addEventListener("click", function(){
       console.log("button")
       chooseMenu()
+      handleButtonClick()
   }  )
 
   overlay.addEventListener("click", function(){
@@ -58,13 +59,4 @@ function chooseMenu(){
 }
 
 burgerMenu (document.getElementById("burger-menu"))
-
-
-let elements = document.getElementById("experience")
-scrollToSection()
-function scrollToSection(){
-    let box = elements.getBoundingClientRect();
-    console.log("position of elements: " + box);
-}
-
 

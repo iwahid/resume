@@ -177,8 +177,14 @@ a{
 	color: var(--text-regular);
 }
 
-.hack-anchor{
+.hack-anchor{ /* хак, благодаря которому, при нажатии на пункт меню - пролистывается к началу выбранной секции, а не к её середине (из-за перекрывающего её же меню)*/
 	margin-bottom: 40px;
+}
+
+#aboutMe-anchor{ /* то же хак, но только для одной секции (первой), потому что иначе никак не привязать к ней anchor так, что бы при клике по ссылке попадали в начало этой секции*/
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 /* === General elements (end) === */
 
@@ -216,6 +222,7 @@ a{
 
 .menu-regular{
 	margin: auto 0;
+	text-transform: uppercase;
 }
 	.menu-regular__item{
 		border: none;
