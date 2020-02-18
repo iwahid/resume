@@ -5,7 +5,6 @@
 
 
 
-
 /* === Variables  === */
 :root {
 	/* element color*/
@@ -207,6 +206,7 @@ a{
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
+	height: 50px;
 	padding-top:0;
 	padding-bottom:0;
 	position: fixed;
@@ -237,6 +237,11 @@ a{
 			color: var(--text-primary);
 		}
 
+@media (max-width: 680px) {
+    .menu-regular{
+		display: none;
+	} 
+}
 
 
 /* Сама кнопка меню */
@@ -246,7 +251,14 @@ a{
     height: 50px;
 	position: relative;
 	padding-right: 3vh;
-    
+}
+
+@media (min-width: 681px) {
+	.burger-menu__button{
+		display: none;
+	}
+
+  
 }
 
 /* hover for menu 
