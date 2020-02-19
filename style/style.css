@@ -628,6 +628,45 @@ a{
 
 /* === Gallery === */
 
+.gallery-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+	.gallery__item {
+		margin: 1%;
+		width: 47%;
+		border: 1px rgba(77, 77, 77, 0.1) solid;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	
+	@media (max-width: 968px ) {
+		.gallery__item {
+			width: 95%;
+		}
+	}
 
+		.gallery-item__preview {
+			background: url(../assets/gallery/images/full-size/img-1.jpg) 100% 100% no-repeat; /* для фоновых изображений нужно добавить отдельную папку */
+			background-size: cover; /* Масштабируем фон */
+			width: 100%;
+			height: 20vh; /*потом заменить на минимальное из vh и vw*/
+		}
+		.gallery-item__title {
+			margin-left: 10px;
+		}
+		.gallery-item__description {
+			margin-left: 10px;
+		}
+		.gallery-item__more-images {
+			margin: 5px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+			.gallery-item__more-image {
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*картинки должны умещаться в размеры минимальных экранов с запасом на элементы управления, отступы и прочее*/
+			}
 
 /* === Gallery (end) === */
