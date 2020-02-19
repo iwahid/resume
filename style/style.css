@@ -17,9 +17,13 @@
 	--text-primary: #0099E5;
 	--text-secondary: #6f6f6f;
 
-	/* resolution */
+	/* Break-point (screen resolution)*/
 	--xxl:1366px;
-	
+	--xl:1200px;
+	--lg:968px;
+	--md:768x;
+	--sm:480px;
+	--xxs:360;
 
 	/* Fonts size */
 	--f-xsm: 12px;
@@ -28,16 +32,7 @@
 	--f-lg: 32px;
   }
 
-    /* === Break-point (screen resolution) === */
-		/*
-			XXS: 0,
-			XS: 360,
-			SM: 576,
-			MD: 768,
-			LG: 968,
-			XL: 1200,
-		*/
-	/* === Break-point (screen resolution) (end)  === */
+	
 
 /* === Variables (end) === */
 
@@ -622,3 +617,17 @@ a{
 					}
 
 /* === Experience (end) === */
+
+
+
+/* === Education === */
+
+/* === Education (end) === */
+
+
+
+/* === Gallery === */
+
+
+
+/* === Gallery (end) === */

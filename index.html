@@ -410,4 +410,59 @@ uppecase для отдельных элементов
 
 
 	</section><!-- "Education" section (end) -->
+
+
+
+	<!-- "Gallery" section -->
+	<section id="gallery" class="gallery section container">
+		<!-- <div class="section-name text-primory f-lg">About me</div> -->
+		<div class="section-info">
+			<div class="section-info__name text-primory f-md f-400">Работы</div>
+			<hr>
+			<div class="section-info__description text-secondary f-xsm">some text</div>
+		</div>
+
+		<div class="section-content">
+			<p>This gallery</p>
+			<div class="gallery-wrapper">
+
+				<!-- Вообще, прелесть этого плагина в том, что он позволяет настроить когда именно подгружать полноразмерные изображения для галереи. Либо загружает всё сразу, либо подгружает только в тот момент, когда их начинают просматривать, что хорошо сказывается на скорости загрузки всего сайта (поскольку изображения в полную велечину загружаются уже после загрузки основного контента
+				Так же, он можно юзать srcset, что актуально для мобилок.
+				-->
+				
+
+				<!-- Скрипты и стили ниже я мог бы подтягивать с CDN, но это не гугл и нет гарантии что поддеркжка этого плагина не прекратится со временем, как и не пропадут все эти файлы. Под боком - оно надёжней.  -->
+				<link rel="stylesheet" href="assets/gallery/fancybox/jquery.fancybox.min.css"> <!-- css of gallery -->
+				<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script> <!-- скрипт jQuery, потом скину вниз -->
+				<script src="assets/gallery/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+				<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/img-1.jpg">
+					<img src="assets/gallery/images/thumbs/img-1.jpg" alt="Image-1">
+				</a>
+				<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/img-2.jpg">
+					<img src="assets/gallery/images/thumbs/img-2.jpg" alt="Image-1">
+				</a>
+				<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/img-3.jpg">
+					<img src="assets/gallery/images/thumbs/img-3.jpg" alt="Image-1">
+				</a>
+				<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/img-4.jpg">
+					<img src="assets/gallery/images/thumbs/img-4.jpg" alt="Image-1">
+				</a>
+				<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/img-5.jpg">
+					<img src="assets/gallery/images/thumbs/img-5.jpg" alt="Image-1">
+				</a>
+				<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/img-6.jpg">
+					<img src="assets/gallery/images/thumbs/img-6.jpg" alt="Image-1">
+				</a>
+
+				
+			</div>
+
+
+		</div>
+
+
+	</section><!-- "Gallery" section (end) -->
 </body>
