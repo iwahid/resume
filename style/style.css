@@ -717,6 +717,7 @@ a{
 			text-indent: 1.5em; 
    			text-align: justify; 
 		}
+		/* Оба нижележащих класса описывают модель поведения дополнительных превью, которые в данный момент отключены. Это ещё одна реализация, которая в данный момент не активирована на сайте */
 		.gallery-item__more-images {
 			margin: 5px;
 			display: flex;
@@ -724,9 +725,14 @@ a{
 			justify-content: space-evenly;
 		}
 			.gallery-item__more-image {
-				box-shadow: 0 0 10px rgba(0, 0, 0, ); /*картинки должны умещаться в размеры минимальных экранов с запасом на элементы управления, отступы и прочее*/
+				box-shadow: 0 0 10px rgba(0, 0, 0, 1); /*картинки должны умещаться в размеры минимальных экранов с запасом на элементы управления, отступы и прочее*/
 				
 			}
 		.gallery-item__links {
+		}
+		.gallery-item__link-to-repo{
+			padding: 5px;
+			margin-left: 5%;
+			margin-right: 3%;
 		}
 /* === Gallery (end) === */

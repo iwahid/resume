@@ -16,6 +16,16 @@
 		
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+
+
+	<!-- Подключение плагина fancybox -->
+	<!-- Вообще, прелесть этого плагина в том, что он позволяет настроить когда именно подгружать полноразмерные изображения для галереи. Либо загружает всё сразу, либо подгружает только в тот момент, когда их начинают просматривать, что хорошо сказывается на скорости загрузки всего сайта (поскольку изображения в полную велечину загружаются уже после загрузки основного контента
+	Так же, он можно юзать srcset, что актуально для мобилок.
+	-->	
+	<!-- css of gallery -->
+	<link rel="stylesheet" href="assets/gallery/fancybox/jquery.fancybox.min.css"> 
+
 	<!-- Кодировка страницы -->
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 
@@ -427,17 +437,6 @@ uppecase для отдельных элементов
 		<div class="section-content">
 			<div class="gallery-wrapper">
 
-				<!-- Вообще, прелесть этого плагина в том, что он позволяет настроить когда именно подгружать полноразмерные изображения для галереи. Либо загружает всё сразу, либо подгружает только в тот момент, когда их начинают просматривать, что хорошо сказывается на скорости загрузки всего сайта (поскольку изображения в полную велечину загружаются уже после загрузки основного контента
-				Так же, он можно юзать srcset, что актуально для мобилок.
-				-->
-				
-
-				<!-- Скрипты и стили ниже я мог бы подтягивать с CDN, но это не гугл и нет гарантии что поддеркжка этого плагина не прекратится со временем, как и не пропадут все эти файлы. Под боком - оно надёжней.  -->
-				<link rel="stylesheet" href="assets/gallery/fancybox/jquery.fancybox.min.css"> <!-- css of gallery -->
-				<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script> <!-- скрипт jQuery, потом скину вниз -->
-				<script src="assets/gallery/fancybox/jquery.fancybox.min.js"></script>
-
-
 				<div class="gallery__item">
 					<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/smart-agency-site/img-1.png"><div class="gallery-item__preview_1 gallery-item__preview"></div>
 					</a>
@@ -452,6 +451,7 @@ uppecase для отдельных элементов
 						<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/smart-agency-site/img-3.png" ></a>
 						
 					</div>
+					<a class="gallery-item__link-to-repo primary-button f-xsm" href="https://github.com/iwahid/LP_Smart-agency" target="blank">Ссылка на репозиторий</a>
 				</div>
 
 				<div class="gallery__item">
@@ -468,6 +468,8 @@ uppecase для отдельных элементов
 						<a data-fancybox="gallery-2" href="assets/gallery/images/full-size/smart-agency-site/img-3.png" ></a>
 						
 					</div>
+
+					<a class="gallery-item__link-to-repo primary-button f-xsm" href="https://github.com/iwahid/mogo-landing" target="blank" >Ссылка на репозиторий</a>
 				</div>
 
 				<div class="gallery__item">
@@ -489,6 +491,8 @@ uppecase для отдельных элементов
 						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-6.png" ></a>
 
 					</div>
+
+					<a class="gallery-item__link-to-repo primary-button f-xsm" href="https://github.com/iwahid/ToDo-project" >Ссылка на репозиторий</a>
 				</div>
 				<div class="gallery__item">
 					<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-1.png" ><div class="gallery-item__preview_4 gallery-item__preview"></div>
@@ -496,7 +500,8 @@ uppecase для отдельных элементов
 				
 					<p class="gallery-item__title f-md">Мобильное приложение "Расписание занятий"</p>
 					<p class="gallery-item__description f-sm text-secondary">Это приложение разрабатывалось мною при написании диплома, в период учёбы в Колледже. Оно представляло собой приложение, демонстрирующее расписание занятий для студентов и преподавателей учебного заведения. </p>
-					<p class="gallery-item__description f-sm text-secondary">Пользователь выбирал требуемую для него учебную группу, и приложение получало все актуальные данные о расписании с сервера учебного заведения. Как правило, расписание методистом было составлено на неделю вперёд. Приложение, загрузив эти данные 1 раз, сохраняло их в кеше. Пользователь, находясь в офлайне мог просматривать последнюю сохраненную версию у себя в приложении. При исправлении, внесении корректировок или выпуске нового расписания, приложение автоматически обновляло данные на устройстве и пользователь всегда имел его актуальную версию.
+					<p class="gallery-item__description f-sm text-secondary">Пользователь выбирал требуемую для него учебную группу, и приложение получало все актуальные данные о расписании с сервера учебного заведения. Как правило, расписание методистом было составлено на неделю вперёд. Приложение, загрузив эти данные 1 раз, сохраняло их в кеше. Пользователь, находясь в офлайне мог просматривать последнюю сохраненную версию у себя в приложении. При исправлении, внесении корректировок или выпуске нового расписания, приложение автоматически обновляло данные на устройстве и пользователь всегда имел его актуальную версию. </p>
+					<p class="gallery-item__description f-sm text-secondary">Приложение было полностью протестировано на тестовом стенде. Серверная часть разрабатывалась отдельно и не была польностью готова к моменту релиза. 
 					</p>
 					
 					<div class="gallery-item__links">
@@ -515,4 +520,15 @@ uppecase для отдельных элементов
 
 
 	</section><!-- "Gallery" section (end) -->
+
+
+	<!-- Scripts -->
+
+	<!-- Скрипты и стили для плагина fancybox я мог бы подтягивать с CDN, но это не гугл и нет гарантии что поддеркжка этого плагина не прекратится со временем, как и не пропадут все эти файлы. Под боком - оно надёжней. -->
+	<!-- скрипт jQuery, необходимый для работы плагина fancybox-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script> 
+	<!-- скрипт плагина fancybox-->
+	<script src="assets/gallery/fancybox/jquery.fancybox.min.js"></script>
+
+	<!-- Scripts (end) -->
 </body>
