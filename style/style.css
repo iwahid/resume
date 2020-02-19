@@ -638,6 +638,7 @@ a{
 	.gallery__item {
 		margin: 1%;
 		margin-bottom: 3%;
+		padding-bottom: 3%;
 		width: 47%;
 		border: 1px rgba(77, 77, 77, 0.1) solid;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -648,36 +649,48 @@ a{
 			width: 95%;
 		}
 	}
+		.gallery-item__preview{
+			background: url(../assets/gallery/images/previews/previews.png) 0% 15%   no-repeat; 
+			background-size: cover;
+			width: 100%;
+			height: 25vh;
+			box-shadow: inset 0 15px 15px  -15px #333 , inset 0 -15px 15px  -15px #333;
+		}
+		@media (max-width: 520px ) {
+			.gallery-item__preview{
+				height: 20vh;
+			}
+		}
+		@media (max-width: 420px ) {
+			.gallery-item__preview{
+				height: 15vh;
+			}
+		}
 
 			.gallery-item__preview_1 {/* Модификаторы классов. Только для того, что бы аккуратно, адаптивно малой кровью вставить изображения */
-				background: url(../assets/gallery/images/previews/smart-agency-site.png) 100% 25%   no-repeat; 
+				background: url(../assets/gallery/images/previews/smart-agency-site.png)  0% 15%   no-repeat; 
 				background-size: cover;
-				width: 100%;
-				height: 30vh;
 			}
 			.gallery-item__preview_2 {
-				background: url(../assets/gallery/images/previews/mogo-site.png) 100% 25%   no-repeat; 
+				background: url(../assets/gallery/images/previews/mogo-site.png)  0% 15%   no-repeat; 
 				background-size: cover;
-				width: 100%;
-				height: 30vh;
 			}
 			.gallery-item__preview_3 {
-				background: url(../assets/gallery/images/previews/todo-app.png) 100% 25%   no-repeat; 
+				background: url(../assets/gallery/images/previews/todo-app.png)  0% 15%   no-repeat; 
 				background-size: cover;
-				width: 100%;
-				height: 30vh;
 			}
 			.gallery-item__preview_4 {
-				background: url(../assets/gallery/images/previews/schedule-app.png) 100% 15%  no-repeat; 
+				background: url(../assets/gallery/images/previews/schedule-app.png)  0% 15%   no-repeat; 
 				background-size: cover;
-				width: 100%;
-				height: 30vh;
+		
 			}
 		.gallery-item__title {
-			margin-left: 10px;
+			margin-left: 5%;
+			margin-right: 3%;
 		}
 		.gallery-item__description {
-			margin-left: 10px;
+			margin-left: 5%;
+			margin-right: 3%;
 		}
 		.gallery-item__more-images {
 			margin: 5px;
@@ -686,8 +699,9 @@ a{
 			justify-content: space-evenly;
 		}
 			.gallery-item__more-image {
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*картинки должны умещаться в размеры минимальных экранов с запасом на элементы управления, отступы и прочее*/
+				box-shadow: 0 0 10px rgba(0, 0, 0, ); /*картинки должны умещаться в размеры минимальных экранов с запасом на элементы управления, отступы и прочее*/
 				
 			}
-
+		.gallery-item__links {
+		}
 /* === Gallery (end) === */
