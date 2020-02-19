@@ -656,19 +656,36 @@ a{
 			height: 25vh;
 			box-shadow: inset 0 15px 15px  -15px #333 , inset 0 -15px 15px  -15px #333;
 		}
+		
+		/* Так много выражений по тому, что сложно сделать адаптивным изображение. Используя  bg-image:cover я хочу добиться того, что бы вся картинка полностью влезала в отведённый ей контейнер. Это не лучшее решение, но это место не критично и такой подход работает. */
 		@media (max-width: 520px ) {
 			.gallery-item__preview{
 				height: 20vh;
 			}
 		}
-		@media (max-width: 420px ) {
+		@media (max-width: 430px ) {
+			.gallery-item__preview{
+				height: 18vh;
+			}
+		}
+		@media (max-width: 390px ) {
 			.gallery-item__preview{
 				height: 15vh;
 			}
 		}
+		@media (max-width: 330px ) {
+			.gallery-item__preview{
+				height: 12vh;
+			}
+		}
+		@media (max-width: 300px ) {
+			.gallery-item__preview{
+				height: 10vh;
+			}
+		}
 		@media (max-height: 520px ) {/*for low-height screens. For example - landscape mode on smartphones*/
 			.gallery-item__preview{
-				height: 30vh;
+				height: 35vh;
 			}
 		}
 
