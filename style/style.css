@@ -149,6 +149,7 @@ li{
 	.section-info__description{
 		display: flex;
 		justify-content: flex-end;
+		text-align: end;
 	}	
 .section-content{
 	padding: 0 10px;
