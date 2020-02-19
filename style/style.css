@@ -666,6 +666,11 @@ a{
 				height: 15vh;
 			}
 		}
+		@media (max-height: 520px ) {/*for low-height screens. For example - landscape mode on smartphones*/
+			.gallery-item__preview{
+				height: 30vh;
+			}
+		}
 
 			.gallery-item__preview_1 {/* Модификаторы классов. Только для того, что бы аккуратно, адаптивно малой кровью вставить изображения */
 				background: url(../assets/gallery/images/previews/smart-agency-site.png)  0% 15%   no-repeat; 
