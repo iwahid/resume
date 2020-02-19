@@ -28,6 +28,8 @@
 
 Знаю о правиле: одна фича=один коммит, но увлекаюсь и реализую сразу несколько изменений в рамках одного коммита
 
+Да, для большей части мобильных устройств, при больших физических расширениях их экранов - они кратно уменьшаются для достижения лучшего эффекта представления контента. С условных 1400-2700 px они снижаются до 360-680px и вёрстку для мобильных устройств необходимо делать исходя именно из этого. Но в данном случае, адаптивность под такие маленькие устройства не доведена до идеала, потому что это не является критическим требованием. В целом же, наиболее грубые ошибки адаптивности устранены, общее понимание этой необходимости, принцип её реализации и умения продемонстрированы.
+
 Для секций "Опыт" и "Образование" я использую один и тот же набор селекторов, потому что их структура идентична. Это компромиссное решение, большим плюсом которого - избежание большого количества дублирования кода. При достатке времени я перепишу эти селекторы в нейтральную форму, что бы они не "читались" как for experience only
 
 
@@ -440,8 +442,9 @@ uppecase для отдельных элементов
 					<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/smart-agency-site/img-1.png"><div class="gallery-item__preview_1 gallery-item__preview"></div>
 					</a>
 					
-					<p class="gallery-item__title f-md">Smart agency site</p>
-					<p class="gallery-item__description f-sm">Small description for my first project Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, omnis ad laudantium distinctio illo magnam officia quidem fuga, eius tenetur dolore veritatis, qui magni molestiae obcaecati voluptates quos in placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam doloribus, ex corporis fuga voluptate eum aliquam? Atque, cupiditate minima! Ad, odit. Commodi deleniti deserunt officia ratione ipsum consequuntur nostrum.</p>
+					<p class="gallery-item__title f-md">Smart Agency site</p>
+					<p class="gallery-item__description f-sm text-secondary">Один из первых примеров практики верстки. Попытки создания адаптивной вёрстки, динамических элементов. Попытка внедрения БЭМ-нейминга в вёрстке сайта. Более осознанное применение системы контроля версий при вёрстке сайта.
+					</p>
 
 					<div class="gallery-item__links">
 						
@@ -455,8 +458,9 @@ uppecase для отдельных элементов
 					<a data-fancybox="gallery-2" href="assets/gallery/images/full-size/mogo-site/img-1.png" ><div class="gallery-item__preview_2 gallery-item__preview"></div>
 						</a>
 					
-					<p class="gallery-item__title f-md">Smart agency site</p>
-					<p class="gallery-item__description f-sm">Small description for my first project Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, omnis ad laudantium distinctio illo magnam officia quidem fuga, eius tenetur dolore veritatis, qui magni molestiae obcaecati voluptates quos in placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam doloribus, ex corporis fuga voluptate eum aliquam? Atque, cupiditate minima! Ad, odit. Commodi deleniti deserunt officia ratione ipsum consequuntur nostrum.</p>
+					<p class="gallery-item__title f-md">MoGo - landing</p>
+					<p class="gallery-item__description f-sm text-secondary">Следующий пример, в котором уже более активно применялись принципы адаптивной верстки. Всё ещё довольно много типичных для начинающего верстальщика ошибок, но уже качественно лучше выстроенная внутренняя структура сайта, значительно уменьшено дублирование кода. Фрагменты стали более независимыми.
+					</p>
 					
 					<div class="gallery-item__links">
 						
@@ -470,8 +474,11 @@ uppecase для отдельных элементов
 					<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-1.png" ><div class="gallery-item__preview_3 gallery-item__preview"></div>
 					</a>
 				
-					<p class="gallery-item__title f-md">Smart agency site</p>
-					<p class="gallery-item__description f-sm">Small description for my first project Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, omnis ad laudantium distinctio illo magnam officia quidem fuga, eius tenetur dolore veritatis, qui magni molestiae obcaecati voluptates quos in placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam doloribus, ex corporis fuga voluptate eum aliquam? Atque, cupiditate minima! Ad, odit. Commodi deleniti deserunt officia ratione ipsum consequuntur nostrum.</p>
+					<p class="gallery-item__title f-md">To-do list</p>
+					<p class="gallery-item__description f-sm text-secondary">Простое приложение, целью создания которого было повышение уровня умений и навыков в оперировании DOM-элементами страницы с помощью javaScript. </p>
+					<p class="gallery-item__description f-sm text-secondary">Динамическое создание элементов, их перемещение и удаление.
+					На данный момент реализована лишь основная часть. В следующих итерациях планирую реализовать хранение данных в localstorage. Авторизацию в приложении, хранение данных в firebase и синхронизацию.
+					</p>
 					
 					<div class="gallery-item__links">
 					
@@ -487,8 +494,10 @@ uppecase для отдельных элементов
 					<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-1.png" ><div class="gallery-item__preview_4 gallery-item__preview"></div>
 					</a>
 				
-					<p class="gallery-item__title f-md">Smart agency site</p>
-					<p class="gallery-item__description f-sm">Small description for my first project Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, omnis ad laudantium distinctio illo magnam officia quidem fuga, eius tenetur dolore veritatis, qui magni molestiae obcaecati voluptates quos in placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam doloribus, ex corporis fuga voluptate eum aliquam? Atque, cupiditate minima! Ad, odit. Commodi deleniti deserunt officia ratione ipsum consequuntur nostrum.</p>
+					<p class="gallery-item__title f-md">Мобильное приложение "Расписание занятий"</p>
+					<p class="gallery-item__description f-sm text-secondary">Это приложение разрабатывалось мною при написании диплома, в период учёбы в Колледже. Оно представляло собой приложение, демонстрирующее расписание занятий для студентов и преподавателей учебного заведения. </p>
+					<p class="gallery-item__description f-sm text-secondary">Пользователь выбирал требуемую для него учебную группу, и приложение получало все актуальные данные о расписании с сервера учебного заведения. Как правило, расписание методистом было составлено на неделю вперёд. Приложение, загрузив эти данные 1 раз, сохраняло их в кеше. Пользователь, находясь в офлайне мог просматривать последнюю сохраненную версию у себя в приложении. При исправлении, внесении корректировок или выпуске нового расписания, приложение автоматически обновляло данные на устройстве и пользователь всегда имел его актуальную версию.
+					</p>
 					
 					<div class="gallery-item__links">
 					

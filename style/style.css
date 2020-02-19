@@ -656,7 +656,7 @@ a{
 			height: 25vh;
 			box-shadow: inset 0 15px 15px  -15px #333 , inset 0 -15px 15px  -15px #333;
 		}
-		
+
 		/* Так много выражений по тому, что сложно сделать адаптивным изображение. Используя  bg-image:cover я хочу добиться того, что бы вся картинка полностью влезала в отведённый ей контейнер. Это не лучшее решение, но это место не критично и такой подход работает. */
 		@media (max-width: 520px ) {
 			.gallery-item__preview{
@@ -709,10 +709,13 @@ a{
 		.gallery-item__title {
 			margin-left: 5%;
 			margin-right: 3%;
+			text-indent: 1.5em; 
 		}
 		.gallery-item__description {
 			margin-left: 5%;
 			margin-right: 3%;
+			text-indent: 1.5em; 
+   			text-align: justify; 
 		}
 		.gallery-item__more-images {
 			margin: 5px;
