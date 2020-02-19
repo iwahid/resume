@@ -633,9 +633,11 @@ a{
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: flex-start;
+	width: 100%;
 }
 	.gallery__item {
 		margin: 1%;
+		margin-bottom: 3%;
 		width: 47%;
 		border: 1px rgba(77, 77, 77, 0.1) solid;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -647,12 +649,30 @@ a{
 		}
 	}
 
-		.gallery-item__preview {
-			background: url(../assets/gallery/images/full-size/img-1.jpg) 100% 100% no-repeat; /* для фоновых изображений нужно добавить отдельную папку */
-			background-size: cover; /* Масштабируем фон */
-			width: 100%;
-			height: 20vh; /*потом заменить на минимальное из vh и vw*/
-		}
+			.gallery-item__preview_1 {/* Модификаторы классов. Только для того, что бы аккуратно, адаптивно малой кровью вставить изображения */
+				background: url(../assets/gallery/images/previews/smart-agency-site.png) 100% 25%   no-repeat; 
+				background-size: cover;
+				width: 100%;
+				height: 30vh;
+			}
+			.gallery-item__preview_2 {
+				background: url(../assets/gallery/images/previews/mogo-site.png) 100% 25%   no-repeat; 
+				background-size: cover;
+				width: 100%;
+				height: 30vh;
+			}
+			.gallery-item__preview_3 {
+				background: url(../assets/gallery/images/previews/todo-app.png) 100% 25%   no-repeat; 
+				background-size: cover;
+				width: 100%;
+				height: 30vh;
+			}
+			.gallery-item__preview_4 {
+				background: url(../assets/gallery/images/previews/schedule-app.png) 100% 15%  no-repeat; 
+				background-size: cover;
+				width: 100%;
+				height: 30vh;
+			}
 		.gallery-item__title {
 			margin-left: 10px;
 		}
@@ -667,6 +687,7 @@ a{
 		}
 			.gallery-item__more-image {
 				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*картинки должны умещаться в размеры минимальных экранов с запасом на элементы управления, отступы и прочее*/
+				
 			}
 
 /* === Gallery (end) === */
