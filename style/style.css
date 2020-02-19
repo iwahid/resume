@@ -638,7 +638,7 @@ a{
 	.gallery__item {
 		margin: 1%;
 		margin-bottom: 3%;
-		padding-bottom: 3%;
+		padding-bottom: 5%;
 		width: 47%;
 		border: 1px rgba(77, 77, 77, 0.1) solid;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -730,9 +730,11 @@ a{
 			}
 		.gallery-item__links {
 		}
+		/* Я помню, что это inline тип, но не привожу его к типу block, потому что в противном случае придётся дополнительно настраивать размеры этого блока */
 		.gallery-item__link-to-repo{
 			padding: 5px;
 			margin-left: 5%;
 			margin-right: 3%;
+			
 		}
 /* === Gallery (end) === */
