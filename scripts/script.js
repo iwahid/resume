@@ -6,7 +6,6 @@ let link0 = document.getElementsByClassName("burger-menu__link")[0]
 let link1 = document.getElementsByClassName("burger-menu__link")[1]
 let link2 = document.getElementsByClassName("burger-menu__link")[2]
 let link3 = document.getElementsByClassName("burger-menu__link")[3]
-let link4 = document.getElementsByClassName("burger-menu__link")[4]
 let overlay = document.getElementById("burger-menu__overlay")
 
 
@@ -39,10 +38,6 @@ link3.addEventListener("click", function(){
     console.log("links")
     chooseMenu()
 }  )
-link4.addEventListener("click", function(){
-    console.log("links")
-    chooseMenu()
-}  )
 
 function chooseMenu(){
   let menuu = document.getElementById("burger-menu__nav") /*вся панель меню*/
@@ -61,6 +56,5 @@ let showTell = document.getElementById("showTell")
 let tellNumber = document.getElementById("tellNumber")
 
 showTell.addEventListener("click", function(){
-   tellNumber.classList.toggle("hidden")
-  
+    tellNumber.classList.toggle("hidden")
 }  )
