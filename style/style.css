@@ -170,7 +170,13 @@ a{
 	text-decoration: none;
 	color: var(--text-regular);
 }
+span{
+	text-indent: 1.5em; 
+}
 
+h2{
+	text-indent: 1.5em; 
+}
 .hack-anchor{ /* хак, благодаря которому, при нажатии на пункт меню - пролистывается к началу выбранной секции, а не к её середине (из-за перекрывающего её же меню)*/
 	margin-bottom: 40px;
 }
@@ -451,7 +457,7 @@ a{
 			margin-left: 15px;
 		}
 			.aboutMe__heading {
-				margin-bottom: 50px;
+				margin-bottom: 1em;
 			}
 			.aboutMe__description {
 				
