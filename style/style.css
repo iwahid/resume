@@ -281,7 +281,8 @@ h2{
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: var(--primary-color);
+	background-color: var(--primary-color);
+	text-indent: 0em; 
     
 }
 
@@ -537,7 +538,9 @@ h2{
 				margin-bottom: 10px;
 			}
 			.experience__location {
-				
+				max-width: 150px;
+				text-align: end;
+				margin-bottom: 2vw;
 			}
 		@media (max-width: 800px) {
 			.experience__left-side {
@@ -551,6 +554,10 @@ h2{
 				}
 				.experience__location {
 					margin-bottom: 30px;
+
+					max-width: 100%;
+					text-align: justify;
+					margin-bottom: 1vw;
 				}
 			/* timeline for */	
 			.experience__left-side::before {
@@ -572,7 +579,7 @@ h2{
 					width: 12px;
 					border-radius: 50%;
 					background-color: var(--primary-color);
-					left: -26px;
+					left: -25px;
 					top: 3px
 				}
 		}
@@ -610,8 +617,18 @@ h2{
 					left: -25px;
 					top: 3px
 				}
+				@media (max-width: 800px) {
+					.experience__position::before {
+						display: none;
+						
+					}
+				}
 			.experience__job-descriptions {
-				margin-bottom: 3vh; /*устанавливаю такой большой отступ у внутреннего элемента, а не у родителя, потому что шкала таймлайна расчитывается от всей высоты контентной части. Отступ внутри родительского блока - растягивает его и является его частью. В то время, как отступ у самого родителя просто разносил бы их дальше друг от друга и не изменял контентную часть*/
+				margin-bottom: 1vh;
+			}
+			.experience__job-descriptions:last-child {
+				margin-bottom: 3vh;
+				 /*устанавливаю такой большой отступ у внутреннего элемента, а не у родителя, потому что шкала таймлайна расчитывается от всей высоты контентной части. Отступ внутри родительского блока - растягивает его и является его частью. В то время, как отступ у самого родителя просто разносил бы их дальше друг от друга и не изменял контентную часть*/
 			}
 			.skills{
 				display: flex;
