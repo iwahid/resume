@@ -74,7 +74,7 @@ uppecase для отдельных элементов
 					
 				</nav>
 				
-				<a href="#" class="burger-menu__button " id="burger-menu__button">
+				<a class="burger-menu__button " id="burger-menu__button">
 					<span class="burger-menu__lines"></span>
 				</a>
 
@@ -83,7 +83,7 @@ uppecase для отдельных элементов
 					<!-- Второй класс временно, только для того, что что проконтролировать то, какие изменения происходят при нажатии на кнопку меню -->
 
 				<nav class="burger-menu__nav" id="burger-menu__nav">
-					<a href="##aboutMe-anchor" class="burger-menu__link">Обо мне</a>
+					<a href="#aboutMe-anchor" class="burger-menu__link">Обо мне</a>
 					<a href="#experience-anchor" class="burger-menu__link">Опыт</a>
 					<a href="#education-anchor" class="burger-menu__link">Образование</a>
 					<a href="#section-4" class="burger-menu__link">Резюме</a>
@@ -92,7 +92,7 @@ uppecase для отдельных элементов
 
 				<div class="burger-menu__overlay" id="burger-menu__overlay"></div> <!-- Плашка над контентом -->
 				<!-- </div> -->
-				<script src="scripts/script.js"></script>
+				<!-- Скрипт обрабатывающий burger-menu унёс вниз -->
 			</div>
 		</section>
 
@@ -212,8 +212,10 @@ uppecase для отдельных элементов
 
 
 				<div class="aboutMe__buttons-section">
-					<button class="primary-button">Скачать резюме</button><!-- Загрузить сюда резюме в pdf -->
-					<button class="primary-button">Позвонить мне</button>
+					<button class="primary-button"title="Скачать резюме в формате pdf">Скачать резюме</button><!-- Загрузить сюда резюме в pdf -->
+					<button id="showTell" class="primary-button showTell" title="Нажмите, что бы показать номер телефона">Показать номер</button>
+					<!--Кнопка внутри ссылки, ради возможности использовать функцию "tel:$$$"-->
+					<a href="tel:+79525224593" id="tellNumber" class="hidden" title="Нажмите, что бы позвонить" ><button id="tellNumber1" class="primary-button">+79525224593</button></a>
 				</div>
 
 			</div>
@@ -529,6 +531,7 @@ uppecase для отдельных элементов
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script> 
 	<!-- скрипт плагина fancybox-->
 	<script src="assets/gallery/fancybox/jquery.fancybox.min.js"></script>
+	<script src="scripts/script.js"></script>
 
 	<!-- Scripts (end) -->
 </body>

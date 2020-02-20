@@ -486,8 +486,13 @@ a{
 			.aboutMe__buttons-section{
 				text-align: center;
 			}		
-			.primary-button {
+			.hidden{
+				display: none;
 			}
+			/* .com-tel:visited+.hidden{
+				display: block;
+			} */
+
 /* === AboutMe (end) === */
 
 /* === Experience === */
