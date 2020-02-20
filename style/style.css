@@ -491,9 +491,10 @@ h2{
 					}
 					.moreInformation__lable{
 						margin-right: 5px;
+						text-indent: 0;
 					}
 					.moreInformation__content{
-
+						text-indent: 0;
 					}
 			.aboutMe__buttons-section{
 				text-align: center;
