@@ -101,7 +101,9 @@ body{
 	}
 
 .primary-button {    
-	height: 35px;
+	height: max-content;
+	width: max-content;
+	padding: 5px 10px;
 	background-color: transparent;
 	border: none;
 	color: black;
@@ -446,6 +448,8 @@ h2{
 					}
 			.aboutMe__buttons-section{
 				text-align: center;
+				display: flex;
+				justify-content: center;
 			}		
 			.hidden{
 				display: none;
