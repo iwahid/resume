@@ -15,6 +15,14 @@
 	--text-primary: #0099E5;
 	--text-secondary: #6f6f6f;
 
+	/* Break-point (screen resolution)*/
+	--xxl:1366px;
+	--xl:1200px;
+	--lg:968px;
+	--md:768x;
+	--sm:480px;
+	--xxs:360;
+	
 	/* Fonts size */
 	--f-xsm: 12px;
 	--f-sm: 16px;
