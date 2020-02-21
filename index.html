@@ -1,8 +1,7 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!-- Комментарии написаны в смешанном стиле (русский/английский) потому что, мой английский не идеален, и не хотелось бы допускать большое количество ошибок в своём резюме, при его использовании. По этому, все не критичные места я описываю на русском. Но при этом, практикую английский и занимаюсь его изучением.-->
+
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 
 <head>
 	<!-- Заголовок страницы в браузере -->
@@ -13,18 +12,14 @@
 	<!--Подключаем шрифты-->
 	<link
 		href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,700,700i,900&display=swap&subset=cyrillic"
-		
 		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-
-
 
 	<!-- Подключение плагина fancybox -->
 	<!-- Вообще, прелесть этого плагина в том, что он позволяет настроить когда именно подгружать полноразмерные изображения для галереи. Либо загружает всё сразу, либо подгружает только в тот момент, когда их начинают просматривать, что хорошо сказывается на скорости загрузки всего сайта (поскольку изображения в полную велечину загружаются уже после загрузки основного контента
 	Так же, он можно юзать srcset, что актуально для мобилок.
-	-->	
+	-->
 	<!-- css of gallery -->
-	<link rel="stylesheet" href="assets/gallery/fancybox/jquery.fancybox.min.css"> 
+	<link rel="stylesheet" href="assets/gallery/fancybox/jquery.fancybox.min.css">
 
 	<!-- Кодировка страницы -->
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -40,45 +35,34 @@
 
 Да, для большей части мобильных устройств, при больших физических расширениях их экранов - они кратно уменьшаются для достижения лучшего эффекта представления контента. С условных 1400-2700 px они снижаются до 360-680px и вёрстку для мобильных устройств необходимо делать исходя именно из этого. Но в данном случае, адаптивность под такие маленькие устройства не доведена до идеала, потому что это не является критическим требованием. В целом же, наиболее грубые ошибки адаптивности устранены, общее понимание этой необходимости, принцип её реализации и умения продемонстрированы.
 
-Для секций "Опыт" и "Образование" я использую один и тот же набор селекторов, потому что их структура идентична. Это компромиссное решение, большим плюсом которого - избежание большого количества дублирования кода. При достатке времени я перепишу эти селекторы в нейтральную форму, что бы они не "читались" как for experience only
+Для секций "Опыт" и "Образование" я использую один и тот же набор селекторов, потому что их структура идентична. Это компромиссное решение, большим плюсом которого - избежание большого количества дублирования кода. Лучшим решением было полностью переписать имена классов в нейтральный стиль, что бы они не относились непосредственно к конкретной секции, а имели некую универсальность, что бы они, к примеру, не "читались" как for experience only
 
 Так же, хорошим решением было бы применение srcset, но посколько объём контента на сайте не огромен и это всего лишь резюме, то нет особого смысла адаптировать изображения под разные разрешения
 
-
-А так же, дополнителньые пометки
+А так же, дополнителньые пометки:
 Загрузить pdf резюме, для скачивания по клику кнопки
-Отредактировать фото
-Кнопка "Показать телефон"
-
-класс section - пока только для опредления области нейминга
-Тег H1 заменить на другой, в первой секции
-
-uppecase для отдельных элементов
 -->
 
 <body>
-	<!-- <header class="header container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nemo odit minima eaque culpa magnam explicabo delectus neque? Modi natus placeat eum? Vero necessitatibus iure recusandae dolore molestiae, nemo error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos fuga earum voluptates velit, praesentium nobis minus, iste aperiam, repudiandae unde officiis! Reiciendis saepe doloremque aliquid possimus tempore magnam doloribus.</header> -->
 	<div id="aboutMe-anchor"></div>
-	<header  class="header">
+
+	<!-- "header" section -->
+	<header class="header">
 
 		<section class="container menu">
-			
+
 			<div class="menu-wrapper">
-				
+
 				<nav class="menu-regular">
 					<a href="#aboutMe-anchor" class="menu-regular__item">Обо мне</a>
 					<a href="#educations-anchor" class="menu-regular__item">Образование</a>
 					<a href="#experience-anchor" class="menu-regular__item">Опыт</a>
 					<a href="#works-anchor" class="menu-regular__item">Мои работы</a>
 				</nav>
-				
+
 				<a class="burger-menu__button " id="burger-menu__button">
 					<span class="burger-menu__lines"></span>
 				</a>
-
-
-				<!-- <div class="burger-menu " id="burger-menu"></div> -->
-					<!-- Второй класс временно, только для того, что что проконтролировать то, какие изменения происходят при нажатии на кнопку меню -->
 
 				<nav class="burger-menu__nav" id="burger-menu__nav">
 					<a href="#aboutMe-anchor" class="burger-menu__link">Обо мне</a>
@@ -87,20 +71,18 @@ uppecase для отдельных элементов
 					<a href="#works-anchor" class="burger-menu__link">Мои работы</a>
 				</nav>
 
-				<div class="burger-menu__overlay" id="burger-menu__overlay"></div> <!-- Плашка над контентом -->
-				<!-- </div> -->
+				<!-- Плашка над контентом -->
+				<div class="burger-menu__overlay" id="burger-menu__overlay"></div>
+
 				<!-- Скрипт обрабатывающий burger-menu унёс вниз -->
 			</div>
 		</section>
 
-
-
-	</header>
+	</header> <!-- "header" section (end) -->
 
 
 	<!-- "About Me" section -->
 	<section class="aboutMe section container">
-		<!-- <div class="section-name text-primory f-lg">About me</div> -->
 		<div class="section-info">
 			<div class="section-info__name text-primory f-md f-400">Обо мне</div>
 			<hr>
@@ -110,17 +92,21 @@ uppecase для отдельных элементов
 		<div class="section-content aboutMe__content">
 
 			<div class="aboutMe__photoContainer">
-
 				<div class="aboutMe__borderPhoto"> </div>
 			</div>
 
-
 			<div class="aboutMe__information">
 
-				<h1 class="aboutMe__heading text-regular f-md">i'm wahid, and <span class="text-primory">QA Engineer</span></h1>
-				<h2 class="aboutMe__description text-secondary f-sm">Привет, Я Олег.  Я тестировщик, который хотел бы освоить <span class="text-primory">Frontend-разработку. </span></h2> 
-				<span class="aboutMe__description text-secondary f-sm">Да, пока я ещё очень мало умею, но я этому быстро учусь. К сожалению, пока моё резюме не может похвастать большим объёмом, но я не думаю что это будет проблемой. Ведь все когда начинали с нуля, и я тому не исключение)</span>
-				<span class="aboutMe__description text-secondary f-sm">Я осознаю что путь во <span class="text-primory">Frontend-разработку</span> будет тяжек и тернист, но ведь это не причина, что бы сказать себе «НЕТ», и не освоить это. А трудности меня лишь подстёгивают.
+				<h1 class="aboutMe__heading text-regular f-md">i'm wahid, and <span class="text-primory">QA
+						Engineer</span></h1>
+				<h2 class="aboutMe__description text-secondary f-sm">Привет, Я Олег. Я тестировщик, который хотел бы
+					освоить <span class="text-primory">Frontend-разработку. </span></h2>
+				<span class="aboutMe__description text-secondary f-sm">Да, пока я ещё очень мало умею, но я этому быстро
+					учусь. К сожалению, пока моё резюме не может похвастать большим объёмом, но я не думаю что это будет
+					проблемой. Ведь все когда начинали с нуля, и я тому не исключение)</span>
+				<span class="aboutMe__description text-secondary f-sm">Я осознаю что путь во <span
+						class="text-primory">Frontend-разработку</span> будет тяжек и тернист, но ведь это не причина,
+					что бы сказать себе «НЕТ», и не освоить это. А трудности меня лишь подстёгивают.
 				</span>
 
 				<ul class="aboutMe__moreInformation ">
@@ -129,7 +115,6 @@ uppecase для отдельных элементов
 						<div class="moreInformation__icon">
 							<object type="image/svg+xml" data="assets/img/icons/age.svg" width="25px" height="25px">
 							</object>
-
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Возраст: </span>
 						<span class="moreInformation__content text-primory f-sm">24 года</span>
@@ -138,17 +123,14 @@ uppecase для отдельных элементов
 						<div class="moreInformation__icon">
 							<object type="image/svg+xml" data="assets/img/icons/Location.svg" width="25px"
 								height="25px"> </object>
-
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Локация: </span>
 						<span class="moreInformation__content text-primory f-sm">Челябинск</span>
 					</li>
-
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
 							<object type="image/svg+xml" data="assets/img/icons/Study.svg" width="25px" height="25px">
 							</object>
-
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Образование: </span>
 						<span class="moreInformation__content text-primory f-sm">ЧелГУ ВО</span>
@@ -157,7 +139,6 @@ uppecase для отдельных элементов
 						<div class="moreInformation__icon">
 							<object type="image/svg+xml" data="assets/img/icons/Degree.svg" width="25px" height="25px">
 							</object>
-
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Специальность: </span>
 						<span class="moreInformation__content text-primory f-sm">Программная инженерия</span>
@@ -166,7 +147,6 @@ uppecase для отдельных элементов
 						<div class="moreInformation__icon">
 							<object type="image/svg+xml" data="assets/img/icons/Works.svg" width="25px" height="25px">
 							</object>
-
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Суммарный опыт </span>
 						<span class="moreInformation__content text-primory f-sm">Более 10 лет</span>
@@ -175,7 +155,6 @@ uppecase для отдельных элементов
 						<div class="moreInformation__icon">
 							<object type="image/svg+xml" data="assets/img/icons/Testing.svg" width="25px" height="25px">
 							</object>
-
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Последняя работа: </span>
 						<span class="moreInformation__content text-primory f-sm">QA engineer</span>
@@ -184,29 +163,30 @@ uppecase для отдельных элементов
 						<div class="moreInformation__icon">
 							<object type="image/svg+xml" data="assets/img/icons/Interests.svg" width="25px"
 								height="25px"> </object>
-
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Интересы: </span>
 						<span class="moreInformation__content text-primory f-sm">Игры, музыка, лыжи, антропология</span>
 					</li>
-
 					<li class="moreInformation__item">
 						<div class="moreInformation__icon">
 							<object type="image/svg+xml" data="assets/img/icons/Mail.svg" width="25px" height="25px">
 							</object>
-
 						</div>
 						<span class="moreInformation__lable  text-regular f-sm">Почта: </span>
-						<a href="mailto:vlad@webref.ru" title="Написать письмо" ><div class="moreInformation__content text-primory f-sm">Iwahid@yandex.ru</div></a>
+						<a href="mailto:vlad@webref.ru" title="Написать письмо">
+							<div class="moreInformation__content text-primory f-sm">Iwahid@yandex.ru</div>
+						</a>
 					</li>
-				</ul> 
-
+				</ul>
 
 				<div class="aboutMe__buttons-section">
-					<button class="primary-button"title="Скачать более полное резюме в формате pdf">Скачать резюме</button><!-- Загрузить сюда резюме в pdf -->
-					<button id="showTell" class="primary-button showTell" title="Нажмите, что бы показать номер телефона">Показать номер</button>
+					<button class="primary-button" title="Скачать более полное резюме в формате pdf">Скачать
+						резюме</button><!-- Загрузить сюда резюме в pdf -->
+					<button id="showTell" class="primary-button showTell"
+						title="Нажмите, что бы показать номер телефона">Показать номер</button>
 					<!--Кнопка внутри ссылки, ради возможности использовать функцию "tel:$$$"-->
-					<a href="tel:+79525224593" id="tellNumber" class="hidden" title="Нажмите, что бы позвонить" ><button id="tellNumber1" class="primary-button">+79525224593</button></a>
+					<a href="tel:+79525224593" id="tellNumber" class="hidden" title="Нажмите, что бы позвонить"><button
+							id="tellNumber1" class="primary-button">+79525224593</button></a>
 				</div>
 
 			</div>
@@ -218,7 +198,6 @@ uppecase для отдельных элементов
 
 	<!-- "Experience" section -->
 	<section id="experience" class="experience section container">
-		<!-- <div class="section-name text-primory f-lg">About me</div> -->
 		<div class="section-info">
 			<div class="section-info__name text-primory f-md f-400">Образование</div>
 			<hr>
@@ -228,7 +207,6 @@ uppecase для отдельных элементов
 
 		<div class="section-content">
 			<div class="experience__wrapper">
-
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2011 - 2015</div>
@@ -236,11 +214,21 @@ uppecase для отдельных элементов
 					</div>
 
 					<div class="experience__right-side">
-						<div class="experience__position text-regular f-sm  ">Программирование в компьютерных системах</div>
-						<span class="experience__job-descriptions text-secondary f-sm">Первое образование в области computer science. Знакомство с программированием, получение теоретической базы: aлгоритмы, структуры данных, базы данных и принципы работы компьютерных сетей. Понимание жизненного цикла разработки ПО и её этапов.</span>
-						<span class="experience__job-descriptions text-secondary f-sm">В качестве учебных проектов были созданы различные интерактивные приложения. В качестве курсовых проектов были разработаны мобильная игра и приложение "Расписание занятий" для этого колледжа.</span>
-						<span class="experience__job-descriptions text-secondary f-sm">Программировал на C# и Java (приложения для андроид).</span>
-						<span class="experience__job-descriptions text-secondary f-sm">Об основных достижениях в учебном плане: получение стипендии правительства Челябинской области за отличную учёбу, при которой всего одна 4-ка за последние 3 года обучения. Что можно считать статестической погрешностью )</span>
+						<div class="experience__position text-regular f-sm  ">Программирование в компьютерных системах
+						</div>
+						<span class="experience__job-descriptions text-secondary f-sm">Первое образование в области
+							computer science. Знакомство с программированием, получение теоретической базы: aлгоритмы,
+							структуры данных, базы данных и принципы работы компьютерных сетей. Понимание жизненного
+							цикла разработки ПО и её этапов.</span>
+						<span class="experience__job-descriptions text-secondary f-sm">В качестве учебных проектов были
+							созданы различные интерактивные приложения. В качестве курсовых проектов были разработаны
+							мобильная игра и приложение "Расписание занятий" для этого колледжа.</span>
+						<span class="experience__job-descriptions text-secondary f-sm">Программировал на C# и Java
+							(приложения для андроид).</span>
+						<span class="experience__job-descriptions text-secondary f-sm">Об основных достижениях в учебном
+							плане: получение стипендии правительства Челябинской области за отличную учёбу, при которой
+							всего одна 4-ка за последние 3 года обучения. Что можно считать статестической погрешностью
+							)</span>
 
 						<ul class="skills">
 							<li class="skill">Программирование</li>
@@ -253,7 +241,6 @@ uppecase для отдельных элементов
 						</ul>
 
 					</div>
-
 				</div>
 
 				<div class="experience__item">
@@ -264,9 +251,11 @@ uppecase для отдельных элементов
 
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Инженерные курсы</div>
-						<span class="experience__job-descriptions text-secondary f-sm">Здесь же, прошёл дополнительные курсы и приобрёл навыки работы с CAD системами и ЧПУ-оборудованием: фрезерными и гравировальными станками. Имел практический опыт работы изготавливая  учебно-методические пособия для этого же колледжа </span>
+						<span class="experience__job-descriptions text-secondary f-sm">Здесь же, прошёл дополнительные
+							курсы и приобрёл навыки работы с CAD системами и ЧПУ-оборудованием: фрезерными и
+							гравировальными станками. Имел практический опыт работы изготавливая учебно-методические
+							пособия для этого же колледжа </span>
 
-							
 						<ul class="skills">
 							<li class="skill">CAD</li>
 							<li class="skill">AutoCAD</li>
@@ -278,7 +267,6 @@ uppecase для отдельных элементов
 							<li class="skill">Gray-box testing</li>
 						</ul>
 					</div>
-
 				</div>
 				<div class="experience__item">
 					<div class="experience__left-side">
@@ -288,7 +276,10 @@ uppecase для отдельных элементов
 
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">QA Engineer</div>
-						<span class="experience__job-descriptions text-secondary f-sm">Прошёл онлайн-курсы по тестированию программного обеспечения. Овладел основными практиками и методами тестирования ПО. Освоил создание и ведение значительной части технической документации связанной с тестированием. Спустя краткое время устроился тестировщиком на удалёнку</span>
+						<span class="experience__job-descriptions text-secondary f-sm">Прошёл онлайн-курсы по
+							тестированию программного обеспечения. Овладел основными практиками и методами тестирования
+							ПО. Освоил создание и ведение значительной части технической документации связанной с
+							тестированием. Спустя краткое время устроился тестировщиком на удалёнку</span>
 						<ul class="skills">
 							<li class="skill">BlackBox-testing</li>
 							<li class="skill">RedMine</li>
@@ -300,9 +291,8 @@ uppecase для отдельных элементов
 							<li class="skill">Test-case</li>
 							<li class="skill">Bug report</li>
 						</ul>
-							
-					</div>
 
+					</div>
 				</div>
 				<div class="experience__item">
 					<div class="experience__left-side">
@@ -312,11 +302,16 @@ uppecase для отдельных элементов
 
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Программная инженерия</div>
-						<span class="experience__job-descriptions text-secondary f-sm">На данный момент прохожу заочное (дистанционное) обучение в ЧелГУ. Углубляюсь в теоретическую базу и параллельно заниманимаюсь практикой: совершенствую вёрстку и изучаю javaScript. Планирую подтянуть технические навыки на грядущем курсе по Frontend-разработке от Napoleon IT School. </span>
-						<span class="experience__job-descriptions text-secondary f-sm">Дистанционная форма обучения позволяет индивидуально выстраивать учебный график и выделять больше времени более интересным и значимым областям. Дополнительно занимаюсь организацией учебного процесса от лица студентов в роли старосты группы</span>
+						<span class="experience__job-descriptions text-secondary f-sm">На данный момент прохожу заочное
+							(дистанционное) обучение в ЧелГУ. Углубляюсь в теоретическую базу и параллельно
+							заниманимаюсь практикой: совершенствую вёрстку и изучаю javaScript. Планирую подтянуть
+							технические навыки на грядущем курсе по Frontend-разработке от Napoleon IT School. </span>
+						<span class="experience__job-descriptions text-secondary f-sm">Дистанционная форма обучения
+							позволяет индивидуально выстраивать учебный график и выделять больше времени более
+							интересным и значимым областям. Дополнительно занимаюсь организацией учебного процесса от
+							лица студентов в роли старосты группы</span>
 
 						<ul class="skills">
-						
 							<li class="skill">Github</li>
 							<li class="skill">Github-pages</li>
 							<li class="skill">Commit-naming rules</li>
@@ -326,31 +321,28 @@ uppecase для отдельных элементов
 							<li class="skill">Adaptive-design</li>
 							<li class="skill">*.webp images</li>
 						</ul>
+
 					</div>
-					
 				</div>
-				
 			</div>
-
-
 		</div>
 
 		<div id="experience-anchor" class="hack-anchor"></div>
 	</section><!-- "Experience" section (end) -->
 
 	<!-- "Education" section -->
-	<!-- Для разметки следующей секции я буду использовать те же классы, что и для предыдущей секции, потмоу что стиль у них один и тот же. Возможно, можно было использвать один общий, нейтральный стиль для обоих (не классы с префиксом experience, а, к примеру, с префиксом resume-->
+	<!-- Для разметки следующей секции я буду использовать те же классы, что и для предыдущей секции, потому что стиль у них один и тот же. Возможно, можно было использвать один общий, нейтральный стиль для обоих (классы не с префиксом experience, а, к примеру, с префиксом resume-->
 	<section id="education" class="experience section container">
-		<!-- <div class="section-name text-primory f-lg">About me</div> -->
 		<div class="section-info">
 			<div class="section-info__name text-primory f-md f-400">Опыт работы</div>
 			<hr>
-			<div class="section-info__description text-secondary f-xsm">Разнообразие опыта определяет гибкость мышления</div>
+			<div class="section-info__description text-secondary f-xsm">Разнообразие опыта определяет гибкость мышления
+			</div>
 		</div>
 
 		<div class="section-content">
 			<div class="experience__wrapper">
-			
+
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2013 - 2015</div>
@@ -359,26 +351,30 @@ uppecase для отдельных элементов
 
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Программист-лаборант</div>
-						<span class="experience__job-descriptions text-secondary f-sm">Первое место работы, непосредственно связанное с IT. Занимался установкой и обновлением ПО на компьютерах, следил за состоянием оборудования и осуществлял ремонт, замену устаревших или выведенных из строя элементов. Занимался прокладкой и настройкой локальных сетей и их администрированием. </span>
-						<span class="experience__job-descriptions text-secondary f-sm">Здесь же, параллельно работал с CNC-станками, их настройкой и эксплуатацией. Помогал в разработке учебно-методической базы для студентов по направлению "Механика"</span>
-						<span class="experience__job-descriptions text-secondary f-sm">Дополнительно занимался разработкой мобильного приложения "расписание занятий" для студентов этого колледжа. </span>
+						<span class="experience__job-descriptions text-secondary f-sm">Первое место работы,
+							непосредственно связанное с IT. Занимался установкой и обновлением ПО на компьютерах, следил
+							за состоянием оборудования и осуществлял ремонт, замену устаревших или выведенных из строя
+							элементов. Занимался прокладкой и настройкой локальных сетей и их администрированием.
+						</span>
+						<span class="experience__job-descriptions text-secondary f-sm">Здесь же, параллельно работал с
+							CNC-станками, их настройкой и эксплуатацией. Помогал в разработке учебно-методической базы
+							для студентов по направлению "Механика"</span>
+						<span class="experience__job-descriptions text-secondary f-sm">Дополнительно занимался
+							разработкой мобильного приложения "расписание занятий" для студентов этого колледжа. </span>
 
 						<ul class="skills">
-						
 							<li class="skill">Работа в коллективе</li>
 							<li class="skill">Техподдержка</li>
 							<li class="skill">Работа с сетями</li>
 							<li class="skill">Принятие ответственности</li>
-							
 						</ul>
 					</div>
-
 				</div>
 
 				<div class="experience__item">
 					<div class="experience__left-side">
 						<div class="experience__date text-regular f-sm">2016 - 2017</div>
-						<div class="experience__location text-secondary f-sm">140 ЗРБР ВС РФ						</div>
+						<div class="experience__location text-secondary f-sm">140 ЗРБР ВС РФ </div>
 					</div>
 
 					<div class="experience__right-side">
@@ -387,10 +383,12 @@ uppecase для отдельных элементов
 							Из общего списка должностных обязанностей:
 							<ul>
 								<li>Нейролингвистическое программирование личного состава</li>
-								<li>Изучение земной коры при помощи таких инструментов, как: МПЛ-50 (овладел в совершенстве), БПЛ-110 и его модификаций ("ЧК" и "Ч-ЖЛ")</li>
-								<li>Телепортация Из, На, Под, Через, В, когда это в принципе невозможно, но командир говорит: "Надо!"</li>
+								<li>Изучение земной коры при помощи таких инструментов, как: МПЛ-50 (овладел в
+									совершенстве), БПЛ-110 и его модификаций ("ЧК" и "Ч-ЖЛ")</li>
+								<li>Телепортация Из, На, Под, Через, В, когда это в принципе невозможно, но командир
+									говорит: "Надо!"</li>
 							</ul>
-							
+
 						</span>
 						<ul class="skills">
 							<li class="skill">Подъём за 45 сек</li>
@@ -400,7 +398,6 @@ uppecase для отдельных элементов
 							<li class="skill">Адаптируемость ко ВСЕМУ на свете</li>
 						</ul>
 					</div>
-
 				</div>
 				<div class="experience__item">
 					<div class="experience__left-side">
@@ -410,7 +407,9 @@ uppecase для отдельных элементов
 
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">Мастер участка</div>
-						<div class="experience__job-descriptions text-secondary f-sm">Строительство и ввод в эксплуатация систем газоснабжения. Работа с тех. документацией, субподрядчиками и клиентами. Установка и настройка инженерных систем.</div>
+						<div class="experience__job-descriptions text-secondary f-sm">Строительство и ввод в
+							эксплуатация систем газоснабжения. Работа с тех. документацией, субподрядчиками и клиентами.
+							Установка и настройка инженерных систем.</div>
 
 						<ul class="skills">
 							<li class="skill">Выстраивание произвдственных процессов</li>
@@ -422,7 +421,6 @@ uppecase для отдельных элементов
 							<li class="skill">Соблюдение сроков</li>
 						</ul>
 					</div>
-
 				</div>
 				<div class="experience__item">
 					<div class="experience__left-side">
@@ -433,22 +431,29 @@ uppecase для отдельных элементов
 
 					<div class="experience__right-side">
 						<div class="experience__position text-regular f-sm  ">QA Engineer</div>
-						<span class="experience__job-descriptions text-secondary f-sm">Работа на удалёнке, тестирование связки из CRM, интернет-магазина и мобильных приложений. Был единственным тестировщиком на проекте, занимался как непосредственно тестированием ПО, так и на написанием технической документации.
+						<span class="experience__job-descriptions text-secondary f-sm">Работа на удалёнке, тестирование
+							связки из CRM, интернет-магазина и мобильных приложений. Был единственным тестировщиком на
+							проекте, занимался как непосредственно тестированием ПО, так и на написанием технической
+							документации.
 							Чаще всего на проекте занимался следующим:
 							<ul>
 								<li>Ручным тестированием;</li>
 								<li>Тестированием мобильных и web-приложений;</li>
-								<li>Тестированием пользовательского интерфейса, удобства использования, кроссбраузерной вёрстки;</li>
+								<li>Тестированием пользовательского интерфейса, удобства использования, кроссбраузерной
+									вёрстки;</li>
 								<li> Анализом технических требований к продукту;</li>
 								<li> Написанием тест-кейсов и чек-листов;</li>
-								<li>Разработкой и поддержкой технической документации (тестпланы, тест-кейсы, чек-листы, отчёты о работе для внутреннего пользования и информирования клиентов об обновлениях продукта);</li>
+								<li>Разработкой и поддержкой технической документации (тестпланы, тест-кейсы, чек-листы,
+									отчёты о работе для внутреннего пользования и информирования клиентов об обновлениях
+									продукта);</li>
 								<li>Первые шаги в плане автоматизации тестирования (postman);</li>
 							</ul>
 						</span>
-						<span class="experience__job-descriptions text-secondary f-sm">Следовал стандарту ведения документации и методам ведения тестирования, как принципу качественной разработки ПО</span>
-						<span class="experience__job-descriptions text-secondary f-sm">Работа была удалённой, и позволяла совмещать это с работой на прежнем месте</span>
+						<span class="experience__job-descriptions text-secondary f-sm">Следовал стандарту ведения
+							документации и методам ведения тестирования, как принципу качественной разработки ПО</span>
+						<span class="experience__job-descriptions text-secondary f-sm">Работа была удалённой, и
+							позволяла совмещать это с работой на прежнем месте</span>
 
-						
 						<ul class="skills">
 							<li class="skill">Agile</li>
 							<li class="skill">White/Black/Grey Box-тестирование</li>
@@ -466,134 +471,155 @@ uppecase для отдельных элементов
 							<li class="skill">Bug report</li>
 						</ul>
 					</div>
-
 				</div>
 			</div>
 		</div>
-
 		<div id="works-anchor" class="hack-anchor"></div>
 	</section><!-- "Education" section (end) -->
 
-
-
 	<!-- "Gallery" section -->
 	<section id="gallery" class="gallery section container">
-		<!-- <div class="section-name text-primory f-lg">About me</div> -->
+		
 		<div class="section-info">
 			<div class="section-info__name text-primory f-md f-400">Мои работы</div>
 			<hr>
-			<div class="section-info__description text-secondary f-xsm">Здесь лишь часть моих работ, связанных с программированием</div>
+			<div class="section-info__description text-secondary f-xsm">Здесь лишь часть моих работ, связанных с
+				программированием</div>
 		</div>
 
 		<div class="section-content">
 			<div class="gallery-wrapper">
-
 				<div class="gallery__item">
-					<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/smart-agency-site/img-1.webp"><div class="gallery-item__preview_1 gallery-item__preview"></div>
+					<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/smart-agency-site/img-1.webp">
+						<div class="gallery-item__preview_1 gallery-item__preview"></div>
 					</a>
-					
+
 					<p class="gallery-item__title f-md">Smart Agency site</p>
-					<p class="gallery-item__description f-sm text-secondary">Один из первых примеров практики верстки. Попытки создания адаптивной вёрстки: динамических элементы, верстка на флексах. Попытка внедрения БЭМ-нейминга в вёрстке сайта. Более осознанное применение системы контроля версий при вёрстке сайта. 
+					<p class="gallery-item__description f-sm text-secondary">Один из первых примеров практики верстки.
+						Попытки создания адаптивной вёрстки: динамических элементы, верстка на флексах. Попытка
+						внедрения БЭМ-нейминга в вёрстке сайта. Более осознанное применение системы контроля версий при
+						вёрстке сайта.
 					</p>
 
 					<div class="gallery-item__links">
-						
-						<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/smart-agency-site/img-2.webp" ></a>
-						<a data-fancybox="gallery-1" href="assets/gallery/images/full-size/smart-agency-site/img-3.webp" ></a>
-						
+						<a data-fancybox="gallery-1"
+							href="assets/gallery/images/full-size/smart-agency-site/img-2.webp"></a>
+						<a data-fancybox="gallery-1"
+							href="assets/gallery/images/full-size/smart-agency-site/img-3.webp"></a>
 					</div>
-					<a class="gallery-item__link-to-repo primary-button f-xsm" href="https://github.com/iwahid/LP_Smart-agency" target="blank">Ссылка на репозиторий</a>
+					<a class="gallery-item__link-to-repo primary-button f-xsm"
+						href="https://github.com/iwahid/LP_Smart-agency" target="blank">Ссылка на репозиторий</a>
 				</div>
 
 				<div class="gallery__item">
-					<a data-fancybox="gallery-2" href="assets/gallery/images/full-size/mogo-site/img-1.webp" ><div class="gallery-item__preview_2 gallery-item__preview"></div>
-						</a>
-					
+					<a data-fancybox="gallery-2" href="assets/gallery/images/full-size/mogo-site/img-1.webp">
+						<div class="gallery-item__preview_2 gallery-item__preview"></div>
+					</a>
+
 					<p class="gallery-item__title f-md">MoGo - landing</p>
-					<p class="gallery-item__description f-sm text-secondary">Следующий пример, в котором уже более активно применялись принципы адаптивной верстки. Всё ещё довольно много типичных для начинающего верстальщика ошибок, но уже качественно лучше выстроенная внутренняя структура сайта, значительно уменьшено дублирование кода. Фрагменты стали более независимыми.
+					<p class="gallery-item__description f-sm text-secondary">Следующий пример, в котором уже более
+						активно применялись принципы адаптивной верстки. Всё ещё довольно много типичных для начинающего
+						верстальщика ошибок, но уже качественно лучше выстроенная внутренняя структура сайта,
+						значительно уменьшено дублирование кода. Фрагменты стали более независимыми.
 					</p>
-					
+
 					<div class="gallery-item__links">
-						
-						<a data-fancybox="gallery-2" href="assets/gallery/images/full-size/mogo-site/img-2.webp" ></a>
-						<a data-fancybox="gallery-2" href="assets/gallery/images/full-size/mogo-site/img-3.webp" ></a>
-						
+						<a data-fancybox="gallery-2" href="assets/gallery/images/full-size/mogo-site/img-2.webp"></a>
+						<a data-fancybox="gallery-2" href="assets/gallery/images/full-size/mogo-site/img-3.webp"></a>
 					</div>
 
-					<a class="gallery-item__link-to-repo primary-button f-xsm" href="https://github.com/iwahid/mogo-landing" target="blank" >Ссылка на репозиторий</a>
+					<a class="gallery-item__link-to-repo primary-button f-xsm"
+						href="https://github.com/iwahid/mogo-landing" target="blank">Ссылка на репозиторий</a>
 				</div>
 
 				<div class="gallery__item">
-					<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-1.webp" ><div class="gallery-item__preview_3 gallery-item__preview"></div>
+					<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-1.webp">
+						<div class="gallery-item__preview_3 gallery-item__preview"></div>
 					</a>
-				
+
 					<p class="gallery-item__title f-md">To-do list</p>
-					<p class="gallery-item__description f-sm text-secondary">Простое приложение, целью создания которого было повышение уровня умений и навыков в оперировании DOM-элементами страницы с помощью javaScript. </p>
-					<p class="gallery-item__description f-sm text-secondary">Динамическое создание элементов, их перемещение и удаление.
-					На данный момент реализована лишь основная часть. В следующих итерациях планирую реализовать хранение данных в localstorage. Авторизацию в приложении, хранение данных в firebase и синхронизацию.
+					<p class="gallery-item__description f-sm text-secondary">Простое приложение, целью создания которого
+						было повышение уровня умений и навыков в оперировании DOM-элементами страницы с помощью
+						javaScript. </p>
+					<p class="gallery-item__description f-sm text-secondary">Динамическое создание элементов, их
+						перемещение и удаление.
+						На данный момент реализована лишь основная часть. В следующих итерациях планирую реализовать
+						хранение данных в localstorage. Авторизацию в приложении, хранение данных в firebase и
+						синхронизацию.
 					</p>
-					
-					<div class="gallery-item__links">
-					
-						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-2.webp" ></a>
-						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-3.webp" ></a>
-						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-4.webp" ></a>
-						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-5.webp" ></a>
-						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-6.webp" ></a>
 
+					<div class="gallery-item__links">
+						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-2.webp"></a>
+						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-3.webp"></a>
+						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-4.webp"></a>
+						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-5.webp"></a>
+						<a data-fancybox="gallery-3" href="assets/gallery/images/full-size/todo-app/img-6.webp"></a>
 					</div>
 
-					<a class="gallery-item__link-to-repo primary-button f-xsm" href="https://github.com/iwahid/ToDo-project" >Ссылка на репозиторий</a>
+					<a class="gallery-item__link-to-repo primary-button f-xsm"
+						href="https://github.com/iwahid/ToDo-project">Ссылка на репозиторий</a>
 				</div>
 				<div class="gallery__item">
-					<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-1.webp" ><div class="gallery-item__preview_4 gallery-item__preview"></div>
+					<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-1.webp">
+						<div class="gallery-item__preview_4 gallery-item__preview"></div>
 					</a>
-				
+
 					<p class="gallery-item__title f-md">Мобильное приложение "Расписание занятий"</p>
-					<p class="gallery-item__description f-sm text-secondary">Это приложение разрабатывалось мною при написании диплома, в период учёбы в Колледже. Оно представляло собой приложение, демонстрирующее расписание занятий для студентов и преподавателей учебного заведения. </p>
-					<p class="gallery-item__description f-sm text-secondary">Пользователь выбирал требуемую для него учебную группу, и приложение получало все актуальные данные о расписании с сервера учебного заведения. Как правило, расписание методистом было составлено на неделю вперёд. Приложение, загрузив эти данные 1 раз, сохраняло их в кеше. Пользователь, находясь в офлайне мог просматривать последнюю сохраненную версию у себя в приложении. При исправлении, внесении корректировок или выпуске нового расписания, приложение автоматически обновляло данные на устройстве и пользователь всегда имел его актуальную версию. </p>
-					<p class="gallery-item__description f-sm text-secondary">Приложение было полностью протестировано на тестовом стенде. Серверная часть разрабатывалась отдельно и не была польностью готова к моменту релиза. 
+					<p class="gallery-item__description f-sm text-secondary">Это приложение разрабатывалось мною при
+						написании диплома, в период учёбы в Колледже. Оно представляло собой приложение, демонстрирующее
+						расписание занятий для студентов и преподавателей учебного заведения. </p>
+					<p class="gallery-item__description f-sm text-secondary">Пользователь выбирал требуемую для него
+						учебную группу, и приложение получало все актуальные данные о расписании с сервера учебного
+						заведения. Как правило, расписание методистом было составлено на неделю вперёд. Приложение,
+						загрузив эти данные 1 раз, сохраняло их в кеше. Пользователь, находясь в офлайне мог
+						просматривать последнюю сохраненную версию у себя в приложении. При исправлении, внесении
+						корректировок или выпуске нового расписания, приложение автоматически обновляло данные на
+						устройстве и пользователь всегда имел его актуальную версию. </p>
+					<p class="gallery-item__description f-sm text-secondary">Приложение было полностью протестировано на
+						тестовом стенде. Серверная часть разрабатывалась отдельно и не была польностью готова к моменту
+						релиза.
 					</p>
-					
-					<div class="gallery-item__links">
-					
-						<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-2.webp" ></a>
-						<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-3.webp" ></a>
-						<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-4.webp" ></a>
-						<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-5.webp" ></a>
 
+					<div class="gallery-item__links">
+						<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-2.webp"></a>
+						<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-3.webp"></a>
+						<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-4.webp"></a>
+						<a data-fancybox="gallery-4" href="assets/gallery/images/full-size/schedule-app/img-5.webp"></a>
 					</div>
 				</div>
 
 				<div class="gallery__item">
-					<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-1.webp" ><div class="gallery-item__preview_5 gallery-item__preview"></div>
+					<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-1.webp">
+						<div class="gallery-item__preview_5 gallery-item__preview"></div>
 					</a>
-				
-					<p class="gallery-item__title f-md">Сайт - Резюме</p>
-					<p class="gallery-item__description f-sm text-secondary">Сайт-резюме, которое было разработано мною специально для поступления на Frontend Dev Course от Napoleon IT School  </p>
-					<p class="gallery-item__description f-sm text-secondary">При разработке этого сайта, основной упор был сделан на адаптивность. В разделе "Мои работы" имеется галлерея (основанная на плагине Fancybox), в которой можно быстро ознакомится с реализованными проектами. Дизайн сайта был разработан самостоятельно, с упором на лёгкость и акцентирование внимания на контент.</p>
-					<p class="gallery-item__description f-sm text-secondary">В целом же, сайт максимально оптимизирован для устройств различного типа, как по части адаптивности дизайна, так и путём оптимизации изображений и другого контента. Единственный пункт, который не удалось оптимизировать в полной мере - это время хранения кеша указанного на сервере Github-pages для статических объектов. Но, тем не менее, показатель в 98% для мобильных устройств - это достойный результат.
-					</p>
-					
-					<div class="gallery-item__links">
-					
-						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-2.webp" ></a>
-						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-3.webp" ></a>
-						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-4.webp" ></a>
-						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-5.webp" ></a>
-						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-6.webp" ></a>
-						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-7.webp" ></a>
-						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-8.webp" ></a>
-						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-9.webp" ></a>
 
+					<p class="gallery-item__title f-md">Сайт - Резюме</p>
+					<p class="gallery-item__description f-sm text-secondary">Сайт-резюме, которое было разработано мною
+						специально для поступления на Frontend Dev Course от Napoleon IT School </p>
+					<p class="gallery-item__description f-sm text-secondary">При разработке этого сайта, основной упор
+						был сделан на адаптивность. В разделе "Мои работы" имеется галлерея (основанная на плагине
+						Fancybox), в которой можно быстро ознакомится с реализованными проектами. Дизайн сайта был
+						разработан самостоятельно, с упором на лёгкость и акцентирование внимания на контент.</p>
+					<p class="gallery-item__description f-sm text-secondary">В целом же, сайт максимально оптимизирован
+						для устройств различного типа, как по части адаптивности дизайна, так и путём оптимизации
+						изображений и другого контента. Единственный пункт, который не удалось оптимизировать в полной
+						мере - это время хранения кеша указанного на сервере Github-pages для статических объектов. Но,
+						тем не менее, показатель в 98% для мобильных устройств - это достойный результат.
+					</p>
+
+					<div class="gallery-item__links">
+						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-2.webp"></a>
+						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-3.webp"></a>
+						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-4.webp"></a>
+						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-5.webp"></a>
+						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-6.webp"></a>
+						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-7.webp"></a>
+						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-8.webp"></a>
+						<a data-fancybox="gallery-5" href="assets/gallery/images/full-size/resume-site/img-9.webp"></a>
 					</div>
 				</div>
 			</div>
-
-
 		</div>
-
-
 	</section><!-- "Gallery" section (end) -->
 
 
@@ -601,7 +627,7 @@ uppecase для отдельных элементов
 
 	<!-- Скрипты и стили для плагина fancybox я мог бы подтягивать с CDN, но это не гугл и нет гарантии что поддеркжка этого плагина не прекратится со временем, как и не пропадут все эти файлы. Под боком - оно надёжней. -->
 	<!-- скрипт jQuery, необходимый для работы плагина fancybox-->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<!-- скрипт плагина fancybox-->
 	<script src="assets/gallery/fancybox/jquery.fancybox.min.js"></script>
 	<script src="scripts/script.js"></script>
